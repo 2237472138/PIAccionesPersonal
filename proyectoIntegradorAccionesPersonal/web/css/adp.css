@@ -8,7 +8,6 @@ and open the template in the editor.
     Author     : alexa
 */
 
-
 ._img_ministerio{
     width:250px;
     height:150px;
@@ -17,7 +16,6 @@ and open the template in the editor.
 ._img_espoch{
     width:120px;
     height:111px;
-
 }
 
 ._parrafo_espoch{
@@ -45,14 +43,18 @@ and open the template in the editor.
     font-size: 1.3em;
     position: relative;
     margin-bottom: 12px;
-    }
-    
+}
+
 ._nombres{
-        text-align: center;
-    }
-    
-._div_cdsdr{
-    font-size: 0.7em;
+    text-align: center;
+}
+
+._tipos{
+    font-size: 0.9em;
+}
+
+._tipos_8{
+    font-size: 8px;
 }
 
 ._div_ca{
