@@ -111,7 +111,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3  _div_bordes_lat">
                     <p>6. SUBROGACIÓN</p>
                     <p>7. ENCARGO</p>
-                    <p >8.  DE REMUNERACIÓN</p>
+                    <p>8. COMISION DE SERVICIOS CON REMUNERACIÓN</p>
                     <p>9. REVALORIZACIÓN</p>
                     <p>10. CESE DE FUNCIONES</p>
                 </div>
