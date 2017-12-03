@@ -90,7 +90,49 @@
                     <p>EXPLICACIÓN</p><br><br>
                 </div>
             </div>
-            <div class="row _tipos">
+
+            <div class="row _div_izq_aba_der">
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">1. INGRESO</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">1</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">6. SUBRPGACIÓN</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">6</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">11. RENUNCIA</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 ">11</div>
+            </div>
+            <div class="row _div_bordes_inf">
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">2. UBICACION DE ESCALA</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">2</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">7. ENCARGO</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">7</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">12. SUPRESIÓN DE PUESTO</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 ">12</div>
+            </div>
+            <div class="row _div_bordes_inf">
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">3. ASCENSO <div>&nbsp;</div></div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">3 <div>&nbsp;</div></div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">8. COMISION DE SERVICIOS CON REMUNERACION</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">8 <div>&nbsp;</div></div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">13. DESTITUCIÓN <div>&nbsp;</div></div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1">13</div>
+            </div>
+            <div class="row _div_bordes_inf _tipo_4">
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">4. CAMBIO ADMINISTRATIVO</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">4</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">9. REVALORACION</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">9</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">14. JUBILACION</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 ">14</div>
+            </div>
+            <div class="row _div_izq_aba_der">
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">5. VACACIONES</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">5</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">10. CESE DE FUNCIONES</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">10</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">15. OTROS</div>
+                <div class="col-sm-1 col-md-1 col-md-1 col-lg-1">15</div>
+            </div>
+
+            <!--<div class="row _tipos">
                 <div class="col-sm-3 col-md-3 col-lg-3  _div_bordes_lat">
                     <p>1. INGRESO</p>
                     <p>2. UBICACIÓN DE ESCALA</p>
@@ -156,7 +198,7 @@
                 <div class="col-12">
                     <p>OBSERVACIONES</p>
                 </div>
-            </div>
+            </div>-->
         </div>
     </div>
 

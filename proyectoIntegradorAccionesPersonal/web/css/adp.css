@@ -49,12 +49,8 @@ and open the template in the editor.
     text-align: center;
 }
 
-._tipos{
+._tipo_4{
     font-size: 0.9em;
-}
-
-._tipos_8{
-    font-size: 8px;
 }
 
 ._div_ca{
@@ -89,5 +85,13 @@ and open the template in the editor.
     border-left: 0px solid black;
     border-top: 0px solid black;
     border-bottom: 0px solid black;  
+}
+
+._div_izq_aba_der{
+    border: 1px black solid;
+    border-left: 1px solid black;
+    border-top: 0px solid black;
+    border-bottom: 1px solid black;
+    border-right:  1px solid black;
 }
 
