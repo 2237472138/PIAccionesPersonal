@@ -34,6 +34,7 @@
             <jsp:include page="views/header.jsp" />
             <jsp:include page="views/documento/main.jsp" />
             <jsp:include page="views/footer.jsp" />
+            
         </div>
 
         <!-- ShieldUI CSS para el MENU LATERAL (treeview)-->

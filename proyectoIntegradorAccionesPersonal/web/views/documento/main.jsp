@@ -1,6 +1,9 @@
- <script type="text/javascript">
+ 
+
+
+<script type="text/javascript">
                                    function cargaContenido() {
-                                   $('#unidades').;
+                                   $('#unidades').load("ingresarAccionesPersonal.jsp");
                                    }
 
 
@@ -9,6 +12,7 @@
 
 <main id="mainContainer" class="container">
     <div id="contenidoEncabezadoAsignatura" class="row">
+        
         <!-- BOTON menu -->
         <div id="contenidoIcono" class="col-xs-1 p-0" >
             <a href="aplicaciones.html">
@@ -142,13 +146,10 @@
                             <div class="form-group row">
                                 <label id="seccionEtiqueta" for="example-text-input" class="col-xs-2 form-control-label">Contenido:</label>
                                 <div id="seccionContenido" class="col-xs-10">
+                                    
+                                    
                                     <div id="unidades" class="unidad">
-                                        <div class="input-group">
-                                            <span class="input-group-addon">Unidad: </span>
-                                            <input type="text" class="form-control" placeholder="Título de la unidad"/>
-                                            <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                            <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                        </div>
+                                        
                                     </div>
                                     <div class="tema">
                                         <div class="input-group">
