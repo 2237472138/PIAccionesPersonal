@@ -30,8 +30,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
     </head>
     <body>
-        <div>
-            
+        <div>                
         </div>
 
         <!-- ShieldUI CSS para el MENU LATERAL (treeview)-->
