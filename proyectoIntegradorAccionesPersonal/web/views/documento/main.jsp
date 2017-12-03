@@ -1,3 +1,12 @@
+ <script type="text/javascript">
+                                   function cargaContenido() {
+                                   $('#unidades').focus();
+                                   }
+
+
+                                </script>
+
+
 <main id="mainContainer" class="container">
     <div id="contenidoEncabezadoAsignatura" class="row">
         <!-- BOTON menu -->
@@ -56,20 +65,21 @@
                     <li id="mnuDatosGenerales" data-expanded="true">
                         Programa Anal&iacute;tico
                         <ul>
-                            <li>Datos generales</li>
-                            <li>A. Caracterización</li>
-                            <li><i class="fa fa-exclamation-triangle tag-warning"></i> B. Objetivo</li>
-                            <li>C. Contenidos</li>
-                            <li>D. Metodología</li>
-                            <li>E. Recursos</li>
-                            <li>F. Procedimientos de evaluaci&oacute;n</li>
-                            <li>G. Bibliograf&iacute;a
-                                <ul>
-                                    <li>B&aacute;sica</li>
-                                    <li>Complementaria</li>
-                                </ul>
-                            </li>
-                            <li>H. Perfil del profesor</li>
+                            <li><a href="#" onclick="cargaContenido();" > Datos generales</a> </li >
+                         
+                                    <li>A. Caracterización</li>
+                                    <li><i class="fa fa-exclamation-triangle tag-warning"></i> B. Objetivo</li>
+                                    <li>C. Contenidos</li>
+                                    <li>D. Metodología</li>
+                                    <li>E. Recursos</li>
+                                    <li>F. Procedimientos de evaluaci&oacute;n</li>
+                                    <li>G. Bibliograf&iacute;a
+                                        <ul>
+                                            <li>B&aacute;sica</li>
+                                            <li>Complementaria</li>
+                                        </ul>
+                                    </li>
+                                    <li>H. Perfil del profesor</li>
                         </ul>
                     </li>
                     <li id="mnuSilabo">S&iacute;labo
@@ -132,7 +142,7 @@
                             <div class="form-group row">
                                 <label id="seccionEtiqueta" for="example-text-input" class="col-xs-2 form-control-label">Contenido:</label>
                                 <div id="seccionContenido" class="col-xs-10">
-                                    <div class="unidad">
+                                    <div id="unidades" class="unidad">
                                         <div class="input-group">
                                             <span class="input-group-addon">Unidad: </span>
                                             <input type="text" class="form-control" placeholder="Título de la unidad"/>
