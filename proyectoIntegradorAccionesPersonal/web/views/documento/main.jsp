@@ -1,18 +1,12 @@
- 
-
-
 <script type="text/javascript">
-                                   function cargaContenido() {
-                                   $('#unidades').load("ingresarAccionesPersonal.jsp");
-                                   }
-
-
-                                </script>
-
+    function cargaContenido() {
+        $('#unidades').load("ingresarAccionesPersonal.jsp");
+    }
+</script>
 
 <main id="mainContainer" class="container">
     <div id="contenidoEncabezadoAsignatura" class="row">
-        
+
         <!-- BOTON menu -->
         <div id="contenidoIcono" class="col-xs-1 p-0" >
             <a href="aplicaciones.html">
@@ -50,7 +44,7 @@
         </div>
     </div>
 
-    <div id="contenido" class="row">
+    <div  id="contenido" class="row">
         <div id="menuLateral"  class="col-xs-3">
             <div id="menuTipo">
                 <span id="lnkReportes" class="dda-link dda-link-selected">
@@ -63,27 +57,29 @@
                     <i class="fa fa-cog"></i>
                 </span>
             </div>
+
+
             <div id="menuLateralScrollbar">
                 <!-- Menú Lateral-->
                 <ul id="treeview">
                     <li id="mnuDatosGenerales" data-expanded="true">
-                        Programa Anal&iacute;tico
+                        Acci&oacute;n de Personal
                         <ul>
-                            <li><a href="#" onclick="cargaContenido();" > Datos generales</a> </li >
-                         
-                                    <li>A. Caracterización</li>
-                                    <li><i class="fa fa-exclamation-triangle tag-warning"></i> B. Objetivo</li>
-                                    <li>C. Contenidos</li>
-                                    <li>D. Metodología</li>
-                                    <li>E. Recursos</li>
-                                    <li>F. Procedimientos de evaluaci&oacute;n</li>
-                                    <li>G. Bibliograf&iacute;a
-                                        <ul>
-                                            <li>B&aacute;sica</li>
-                                            <li>Complementaria</li>
-                                        </ul>
-                                    </li>
-                                    <li>H. Perfil del profesor</li>
+                            <li>Datos generales</li >
+                            <li><a onclick="cargaContenido();" >A. Ingresar Acci&oacute;n de personal</a></li>                            
+                            <li><a>A. Caracterización </a> </li>
+                            <li><i class="fa fa-exclamation-triangle tag-warning"></i> B. Objetivo</li>
+                            <li>C. Contenidos</li>
+                            <li>D. Metodología</li>
+                            <li>E. Recursos</li>
+                            <li>F. Procedimientos de evaluaci&oacute;n</li>
+                            <li>G. Bibliograf&iacute;a
+                                <ul>
+                                    <li>B&aacute;sica</li>
+                                    <li>Complementaria</li>
+                                </ul>
+                            </li>
+                            <li>H. Perfil del profesor</li>
                         </ul>
                     </li>
                     <li id="mnuSilabo">S&iacute;labo
@@ -136,6 +132,10 @@
                     <a id="lnkAyuda" href="#" class="nav-link text-white fa fa-question" tabindex="0" role="button" data-toggle="popover" data-trigger="focus" data-placement="left"></a>
                 </div>                    
             </div>
+
+
+            <!--Ejemplo del formato-->
+
             <div class="row">
                 <div id="contenidoDinamicoScrollbar" class="col-xs-12">
                     <div id="contenidoDinamico" class="mt-1">
@@ -143,14 +143,10 @@
                         <form>
                             <!-- Ejemplo de ártbol de contenidos -->
 
-                            <div class="form-group row">
+                       <!--     <div class="form-group row">
                                 <label id="seccionEtiqueta" for="example-text-input" class="col-xs-2 form-control-label">Contenido:</label>
                                 <div id="seccionContenido" class="col-xs-10">
-                                    
-                                    
-                                    <div id="unidades" class="unidad">
-                                        
-                                    </div>
+
                                     <div class="tema">
                                         <div class="input-group">
                                             <span class="input-group-addon">Tema: </span>
@@ -191,11 +187,14 @@
                                     </div>
                                 </div>
                             </div>
-
+-->
                             <!-- FIN de ejemplo de ártbol de contenidos -->
 
+                                    <div id="unidades" class="unidad">
 
-                            <div class="form-group row">
+                                    
+                                    </div>
+                       <!--      <div class="form-group row">
                                 <label for="example-text-input" class="col-xs-2 col-form-label">Texto:</label>
                                 <div class="col-xs-10">
                                     <input class="form-control" type="text" placeholder="Texto de una sola línea" id="example-text-input">
@@ -245,8 +244,8 @@
                                 <div class="col-xs-10">
                                     <input class="form-control" type="date" placeholder="19-08-2010" id="example-date-input">
                                 </div>
-                            </div>
-                            <!-- -->
+                            </div> -->
+                       <!--  
                             <div class="form-group row">
                                 <label for="exampleSelect1" class="col-xs-2 col-form-label">Selecci&oacute;n:</label>
                                 <div class="col-xs-10">
@@ -286,14 +285,14 @@
                             </div>
                             <!-- Observaciones -->
 
-                            <div class="form-group row">
+                           <!--   <div class="form-group row">
                                 <label for="txtObservaciones" class="col-xs-2 col-form-label">Observaciones:</label>
                                 <div class="col-xs-10">
                                     <textarea class="form-control bg-warning" id="txtObservaciones" rows="5" disabled="disabled"></textarea>
                                 </div>
                             </div>
                         </form>
-
+-->
                         <!-- barra de botones -->
                         <div class="form-group row">
                             <div class="col-xs-9">
@@ -328,6 +327,9 @@
                     </div>
                 </div>
             </div>
+
+            <!--Fin del Ejemplo del formato-->
+
             <div class="row dda-row">
                 <div id="contenidoPie" class="col-xs-12">
                     <i id="msgIcon" class="fa fa-spinner"></i>
@@ -336,7 +338,6 @@
                 </div>
             </div>
         </div>
-
     </div>            
 </main>
 <script src="js/documento/documento.js" type="text/javascript"></script>
