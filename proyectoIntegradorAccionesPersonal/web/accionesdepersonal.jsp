@@ -35,121 +35,133 @@
 
 </head>
 <body>
-    
-    
+
+
     <div class="container">
-        <div class="_div_bordes col-sm-12 col-md-12 col-md-12 col-lg-12">
-        <div class="row">
-            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
-                <p><img src="images/varias/LogoMDT.png" class="_img_ministerio"></p>              
+        <div class="col-sm-12 col-md-12 col-md-12 col-lg-12">
+            <div class="row">
+                <div class="_div_bordes col-sm-4 col-md-4 col-md-4 col-lg-4">
+                    <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
+                        <p><img src="images/varias/LogoMDT.png" class="_img_ministerio"></p>              
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
+                    <div class="row _div_bordes_med">
+                        <div class="_div_med"><img src="images/varias/logoESPOCH.jpg" class="_img_espoch"></div>
+                        <div><p class='_parrafo_espoch'>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO DIRECCION DE TALENTO HUMANO</p></div>                       
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-md-4 col-lg-4 _div_adp">
+                    <div class="row _div_bordes">
+                        <div class="_adp">ACCION DE PERSONAL</div>
+                        <div class="_numero">No. 394.A.DTH.2017</div><br><br>
+                        <div class="_fecha">Fecha: 29 de Agosto de 2017</div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-success">
-                <div class="_div_med"><img src="images/varias/logoESPOCH.jpg" class="_img_espoch"></div>
-                <div><p class='_parrafo_espoch'>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO DIRECCION DE TALENTO HUMANO</p></div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
+                    <div class="col-sm-12 col-md-12 col-lg-12">           
+                        <p>RESOLUCION 381.CP.2017</p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary _div_adp">
-                <div class="_adp">ACCION DE PERSONAL</div>
-                <div class="_numero">No. 394.A.DTH.2017</div><br><br>
-                <div class="_fecha">Fecha: 29 de Agosto de 2017</div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
+                    <div class="col-12 _nombres">
+                        <div>MATHEU AGUILAR HUMBERTO ABELARDO</div>
+                        <div>APELLIDOS Y NOMBRES</div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12 bg-primary">
-                <p>RESOLUCION 381.CP.2017</p>
+            <div class="row _div_adp _div_bordes_inf">
+                <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
+                    <div>No. De Cédula de Ciudadanía</div><br>
+                    <div>1705279295</div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 _div_bordes_lat">
+                    <div>No. De Afiliación IESS</div><br>
+                    <div>¿¿¿¿¿¿¿??????</div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
+                    <div>Rige a partir de</div><br>
+                    <div>01 de septiembre de 2017</div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12 bg-success _nombres">
-                <div>MATHEU AGUILAR HUMBERTO ABELARDO</div>
-                <div>APELLIDOS Y NOMBRES</div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
+                    <p>EXPLICACIÓN</p><br><br>
+                </div>
             </div>
-        </div>
-        <div class="row _div_adp">
-            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
-                <div>No. De Cédula de Ciudadanía</div><br>
-                <div>1705279295</div>
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3  _div_bordes_lat">
+                    <p>1. INGRESO</p>
+                    <p>2. UBICACIÓN DE ESCALA</p>
+                    <p>3. ASCENSO</p>
+                    <p >4. CAMBIO </p>
+                    <p>5. VACACIONES</p>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 ">
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3  _div_bordes_lat">
+                    <p>6. SUBROGACIÓN</p>
+                    <p>7. ENCARGO</p>
+                    <p >8.  DE REMUNERACIÓN</p>
+                    <p>9. REVALORIZACIÓN</p>
+                    <p>10. CESE DE FUNCIONES</p>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 ">
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>10</p>
+                </div>
+                <div class="col-sm-3 col-md-3 col-lg-3 _div_bordes_lat">
+                    <p>11. RENUNCIA</p>
+                    <p>12. SUPRESIÓN DE PUESTO</p>
+                    <p>13. DESTITUCIÓN</p>
+                    <p>14. JUBILACIÓN</p>
+                    <p>15. OTRO</p>
+                </div>
+                <div class="col-sm-1 col-md-1 col-lg-1 _div_bordes_lat_izq">
+                    <p>11</p>
+                    <p>12</p>
+                    <p>13</p>
+                    <p>14</p>
+                    <p>15</p>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-success">
-                <div>No. De Afiliación IESS</div><br>
-                <div>??????¿¿¿¿¿¿¿</div>
+            <div class="row _div_bordes">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 ">
+                    <div class="_div_adp">SITUACIÓN ACTUAL</div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 ">
+                    <div class="_div_adp">SITUACIÓN PROPUESTA</div>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
-                <div>Rige a partir de</div><br>
-                <div>01 de septiembre de 2017</div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 ">
+                    <p>col-6</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-md-6 col-lg-6">
+                    <p>col-6</p>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <p>EXPLICACIÓN</p><br><br>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3 col-md-3 col-lg-3 bg-primary">
-                <div>1. INGRESO</div><br>
-                <div>2. UBICACIÓN DE ESCALA</div><br>
-                <div>3. ASCENSO</div><br>
-                <div>4. CAMBIO ADMINISTRATIVO</div><br>
-                <div>5. VACACIONES</div><br>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1 bg-success">
-                <div>1</div><br>
-                <div>2</div><br>
-                <div>3</div><br>
-                <div>4</div><br>
-                <div>5</div><br>
-            </div>
-            <div class="col-sm-3 col-md-3 col-lg-3 bg-primary">
-                <div>6. SUBROGACIÓN</div><br>
-                <div>7. ENCARGO</div><br>
-                <div><p class="_div_cdsdr">8. COMISIÓN DE SERVICIOS DE REMUNERACIÓN</p></div>
-                <div>9. REVALORIZACIÓN</div><br>
-                <div>10. CESE DE FUNCIONES</div><br>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1 bg-success">
-                <div>6</div><br>
-                <div>7</div><br>
-                <div>8</div><br>
-                <div>9</div><br>
-                <div>10</div><br>
-            </div>
-            <div class="col-sm-3 col-md-3 col-lg-3 bg-primary">
-                <div>11. RENUNCIA</div><br>
-                <div>12. SUPRESIÓN DE PUESTO</div><br>
-                <div>13. DESTITUCIÓN</div><br>
-                <div>14. JUBILACIÓN</div><br>
-                <div>15. OTRO</div><br>
-            </div>
-            <div class="col-sm-1 col-md-1 col-lg-1 bg-success">
-                <div>11</div><br>
-                <div>12</div><br>
-                <div>13</div><br>
-                <div>14</div><br>
-                <div>15</div><br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 bg-success">
-                <div class="_div_adp">SITUACIÓN ACTUAL</div>
-            </div>
-            <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 bg-primary">
-                <div class="_div_adp">SITUACIÓN PROPUESTA</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 bg-success">
-                <p>col-6</p>
-            </div>
-            <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 bg-primary">
-                <p>col-6</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12">
-                <p>OBSERVACIONES</p>
+            <div class="row">
+                <div class="col-12">
+                    <p>OBSERVACIONES</p>
+                </div>
             </div>
         </div>
     </div>
-        </div>
 
     <!-- ShieldUI CSS para el MENU LATERAL (treeview)-->
     <link href="css/treeview.min.css" rel="stylesheet" type="text/css"/>

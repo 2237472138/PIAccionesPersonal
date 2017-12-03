@@ -10,7 +10,7 @@ and open the template in the editor.
 
 
 ._img_ministerio{
-    width:300px;
+    width:250px;
     height:150px;
 }
 
@@ -55,7 +55,37 @@ and open the template in the editor.
     font-size: 0.7em;
 }
 
+._div_ca{
+    font-size: 0.5em;
+}
+
 ._div_bordes
 {
     border: 1px black solid;
 }
+
+._div_bordes_med
+{
+    border: 1px black solid;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+}
+
+._div_bordes_inf{
+    border: 1px black solid;
+    border-top: 0px solid black;
+}
+
+._div_bordes_lat{
+    border: 1px black solid;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;  
+}
+
+._div_bordes_lat_izq{
+    border: 1px black solid;
+    border-left: 0px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;  
+}
+
