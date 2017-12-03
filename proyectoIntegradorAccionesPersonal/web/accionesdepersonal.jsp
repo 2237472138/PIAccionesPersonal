@@ -32,16 +32,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
 
-    
+
 </head>
 <body>
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
-                <p>LOGO MINISTERIO</p>
+                <p><img src="images/varias/LogoMDT.png" class="img-ministerio"></p>              
             </div>
             <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-success">
-                <div>LOGO ESPOCH</div>
+                <div></div>
                 <div>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO</div>
             </div>
             <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
