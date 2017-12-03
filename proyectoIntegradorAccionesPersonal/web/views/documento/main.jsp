@@ -1,6 +1,6 @@
  <script type="text/javascript">
                                    function cargaContenido() {
-                                   $('#unidades').focus();
+                                   $('#unidades').;
                                    }
 
 
