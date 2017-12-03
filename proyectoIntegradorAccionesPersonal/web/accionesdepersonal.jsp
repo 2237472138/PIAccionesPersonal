@@ -30,7 +30,117 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
     </head>
     <body>
-        <div>                
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
+                    <p>LOGO MINISTERIO</p>
+                </div>
+                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-success">
+                    <div>LOGO ESPOCH</div>
+                    <div>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO</div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
+                    <div>ACCION DE PERSONAL</div>
+                    <div>No. 394.A.DTH.2017</div>
+                    <div>Fecha: 29 de Agosto de 2017</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 bg-primary">
+                    <p>RESOLUCION 381.CP.2017</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 bg-success">
+                    <div>MATHEU AGUILAR HUMBERTO ABELARDO</div>
+                    <div>APELLIDOS Y NOMBRES</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
+                    <div>No. De Cédula de Ciudadanía</div>
+                    <div>1705279295</div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-success">
+                    <div>No. De Afiliación IESS</div>
+                    <div>??????¿¿¿¿¿¿¿</div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
+                    <div>Rige a partir de</div>
+                    <div>01 de septiembre de 2017</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <p>EXPLICACIÓN</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-2 bg-primary">
+
+                    <div>1. INGRESO</div>
+                    <div>2. UBICACIÓN DE ESCALA</div>
+                    <div>3. ASCENSO</div>
+                    <div>4. CAMBIO ADMINISTRATIVO</div>
+                    <div>5. VACACIONES</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2 bg-success">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2 bg-primary">
+                    <div>6. SUBROGACIÓN</div>
+                    <div>7. ENCARGO</div>
+                    <div>8. COMISIÓN DE SERVICIOS DE REMUNERACIÓN</div>
+                    <div>9. REVALORIZACIÓN</div>
+                    <div>10. CESE DE FUNCIONES</div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-2 bg-success">
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>10</div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2 bg-primary">
+                    <div>11. RENUNCIA</div>
+                    <div>12. SUPRESIÓN DE PUESTO</div>
+                    <div>13. DESTITUCIÓN</div>
+                    <div>14. JUBILACIÓN</div>
+                    <div>15. OTRO</div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-2 bg-success">
+                    <div>11</div>
+                    <div>12</div>
+                    <div>13</div>
+                    <div>14</div>
+                    <div>15</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 bg-success">
+                    <div>SITUACIÓN ACTUAL</div>
+                </div>
+                <div class="col-6 bg-primary">
+                    <div>SITUACIÓN PROPUESTA</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 bg-success">
+                    <p>col-6</p>
+                </div>
+                <div class="col-6 bg-primary">
+                    <p>col-6</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>OBSERVACIONES</p>
+                </div>
+            </div>
         </div>
 
         <!-- ShieldUI CSS para el MENU LATERAL (treeview)-->
