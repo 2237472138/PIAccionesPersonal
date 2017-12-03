@@ -1,3 +1,10 @@
+<%-- 
+    Document   : login
+    Created on : 03/12/2017, 11:12:29
+    Author     : alexa
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="es">
     <head>
