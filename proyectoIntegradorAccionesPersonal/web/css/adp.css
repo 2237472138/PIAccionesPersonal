@@ -7,12 +7,49 @@ and open the template in the editor.
     Created on : 02/12/2017, 21:02:15
     Author     : alexa
 */
-.img-ministerio{
+._border1{
+    border-top-color: #CC0000;
+}
+
+._img_ministerio{
     width:300px;
     height:150px;
 }
 
-.img-espoch{
-    width:300px;
-    height:150px;
+._img_espoch{
+    width:120px;
+    height:111px;
+
 }
+
+._parrafo_espoch{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+._div_med{
+    display:block;
+    text-align:center;
+}
+
+._div_adp{
+    text-align: center;  
+}
+._adp{
+    font-size: 1.7em;
+
+}
+
+._numero{
+    font-size: 1.5em;
+}
+
+._fecha{
+    font-size: 1.3em;
+    position: relative;
+    margin-bottom: 12px;
+    }
+    
+._nombres{
+        text-align: center;
+    }

@@ -37,17 +37,17 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
-                <p><img src="images/varias/LogoMDT.png" class="img-ministerio"></p>              
+            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
+                <p><img src="images/varias/LogoMDT.png" class="_img_ministerio"></p>              
             </div>
             <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-success">
-                <div></div>
-                <div>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO</div>
+                <div class="_div_med"><img src="images/varias/logoESPOCH.jpg" class="_img_espoch"></div>
+                <div><p class='_parrafo_espoch'>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO DIRECCION DE TALENTO HUMANO</p></div>
             </div>
-            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
-                <div>ACCION DE PERSONAL</div>
-                <div>No. 394.A.DTH.2017</div>
-                <div>Fecha: 29 de Agosto de 2017</div>
+            <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary _div_adp">
+                <div class="_adp">ACCION DE PERSONAL</div>
+                <div class="_numero">No. 394.A.DTH.2017</div><br><br>
+                <div class="_fecha">Fecha: 29 de Agosto de 2017</div>
             </div>
         </div>
         <div class="row">
@@ -56,22 +56,22 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-12 bg-success">
+            <div class="col-12 bg-success _nombres">
                 <div>MATHEU AGUILAR HUMBERTO ABELARDO</div>
                 <div>APELLIDOS Y NOMBRES</div>
             </div>
         </div>
-        <div class="row">
+        <div class="row _div_adp">
             <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
-                <div>No. De Cédula de Ciudadanía</div>
+                <div>No. De Cédula de Ciudadanía</div><br>
                 <div>1705279295</div>
             </div>
             <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-success">
-                <div>No. De Afiliación IESS</div>
+                <div>No. De Afiliación IESS</div><br>
                 <div>??????¿¿¿¿¿¿¿</div>
             </div>
             <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 bg-primary">
-                <div>Rige a partir de</div>
+                <div>Rige a partir de</div><br>
                 <div>01 de septiembre de 2017</div>
             </div>
         </div>
