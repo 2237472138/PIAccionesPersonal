@@ -93,12 +93,12 @@
                     <p>EXPLICACIÓN</p><br><br>
                 </div>
             </div>
-            <div class="row">
+            <div class="row _tipos">
                 <div class="col-sm-3 col-md-3 col-lg-3  _div_bordes_lat">
                     <p>1. INGRESO</p>
                     <p>2. UBICACIÓN DE ESCALA</p>
                     <p>3. ASCENSO</p>
-                    <p >4. CAMBIO </p>
+                    <p>4. CAMBIO ADMINISTRATIVO</p>
                     <p>5. VACACIONES</p>
                 </div>
                 <div class="col-sm-1 col-md-1 col-lg-1 ">
@@ -111,7 +111,7 @@
                 <div class="col-sm-3 col-md-3 col-lg-3  _div_bordes_lat">
                     <p>6. SUBROGACIÓN</p>
                     <p>7. ENCARGO</p>
-                    <p>8. COMISION DE SERVICIOS CON REMUNERACIÓN</p>
+                    <p class="_tipos_8">8. COMISION DE SERVICIOS CON REMUNERACIÓN</p>
                     <p>9. REVALORIZACIÓN</p>
                     <p>10. CESE DE FUNCIONES</p>
                 </div>
