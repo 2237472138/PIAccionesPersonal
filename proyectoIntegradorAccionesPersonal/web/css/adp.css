@@ -35,7 +35,6 @@ and open the template in the editor.
 }
 ._adp{
     font-size: 1.7em;
-
 }
 
 ._numero{
@@ -51,3 +50,12 @@ and open the template in the editor.
 ._nombres{
         text-align: center;
     }
+    
+._div_cdsdr{
+    font-size: 0.7em;
+}
+
+._div_bordes
+{
+    border: 1px black solid;
+}

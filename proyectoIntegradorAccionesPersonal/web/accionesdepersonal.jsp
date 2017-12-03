@@ -35,7 +35,10 @@
 
 </head>
 <body>
+    
+    
     <div class="container">
+        <div class="_div_bordes col-sm-12 col-md-12 col-md-12 col-lg-12">
         <div class="row">
             <div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
                 <p><img src="images/varias/LogoMDT.png" class="_img_ministerio"></p>              
@@ -77,67 +80,66 @@
         </div>
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-                <p>EXPLICACIÓN</p>
+                <p>EXPLICACIÓN</p><br><br>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-2 bg-primary">
-
-                <div>1. INGRESO</div>
-                <div>2. UBICACIÓN DE ESCALA</div>
-                <div>3. ASCENSO</div>
-                <div>4. CAMBIO ADMINISTRATIVO</div>
-                <div>5. VACACIONES</div>
+            <div class="col-sm-3 col-md-3 col-lg-3 bg-primary">
+                <div>1. INGRESO</div><br>
+                <div>2. UBICACIÓN DE ESCALA</div><br>
+                <div>3. ASCENSO</div><br>
+                <div>4. CAMBIO ADMINISTRATIVO</div><br>
+                <div>5. VACACIONES</div><br>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-2 bg-success">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
+            <div class="col-sm-1 col-md-1 col-lg-1 bg-success">
+                <div>1</div><br>
+                <div>2</div><br>
+                <div>3</div><br>
+                <div>4</div><br>
+                <div>5</div><br>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-2 bg-primary">
-                <div>6. SUBROGACIÓN</div>
-                <div>7. ENCARGO</div>
-                <div>8. COMISIÓN DE SERVICIOS DE REMUNERACIÓN</div>
-                <div>9. REVALORIZACIÓN</div>
-                <div>10. CESE DE FUNCIONES</div>
+            <div class="col-sm-3 col-md-3 col-lg-3 bg-primary">
+                <div>6. SUBROGACIÓN</div><br>
+                <div>7. ENCARGO</div><br>
+                <div><p class="_div_cdsdr">8. COMISIÓN DE SERVICIOS DE REMUNERACIÓN</p></div>
+                <div>9. REVALORIZACIÓN</div><br>
+                <div>10. CESE DE FUNCIONES</div><br>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-2 bg-success">
-                <div>6</div>
-                <div>7</div>
-                <div>8</div>
-                <div>9</div>
-                <div>10</div>
+            <div class="col-sm-1 col-md-1 col-lg-1 bg-success">
+                <div>6</div><br>
+                <div>7</div><br>
+                <div>8</div><br>
+                <div>9</div><br>
+                <div>10</div><br>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-2 bg-primary">
-                <div>11. RENUNCIA</div>
-                <div>12. SUPRESIÓN DE PUESTO</div>
-                <div>13. DESTITUCIÓN</div>
-                <div>14. JUBILACIÓN</div>
-                <div>15. OTRO</div>
+            <div class="col-sm-3 col-md-3 col-lg-3 bg-primary">
+                <div>11. RENUNCIA</div><br>
+                <div>12. SUPRESIÓN DE PUESTO</div><br>
+                <div>13. DESTITUCIÓN</div><br>
+                <div>14. JUBILACIÓN</div><br>
+                <div>15. OTRO</div><br>
             </div>
-            <div class="col-sm-6 col-md-6 col-lg-2 bg-success">
-                <div>11</div>
-                <div>12</div>
-                <div>13</div>
-                <div>14</div>
-                <div>15</div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-6 bg-success">
-                <div>SITUACIÓN ACTUAL</div>
-            </div>
-            <div class="col-6 bg-primary">
-                <div>SITUACIÓN PROPUESTA</div>
+            <div class="col-sm-1 col-md-1 col-lg-1 bg-success">
+                <div>11</div><br>
+                <div>12</div><br>
+                <div>13</div><br>
+                <div>14</div><br>
+                <div>15</div><br>
             </div>
         </div>
         <div class="row">
-            <div class="col-6 bg-success">
+            <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 bg-success">
+                <div class="_div_adp">SITUACIÓN ACTUAL</div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 bg-primary">
+                <div class="_div_adp">SITUACIÓN PROPUESTA</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 bg-success">
                 <p>col-6</p>
             </div>
-            <div class="col-6 bg-primary">
+            <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 bg-primary">
                 <p>col-6</p>
             </div>
         </div>
@@ -147,6 +149,7 @@
             </div>
         </div>
     </div>
+        </div>
 
     <!-- ShieldUI CSS para el MENU LATERAL (treeview)-->
     <link href="css/treeview.min.css" rel="stylesheet" type="text/css"/>
