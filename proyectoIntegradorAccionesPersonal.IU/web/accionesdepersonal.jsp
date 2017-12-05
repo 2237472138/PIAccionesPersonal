@@ -132,73 +132,7 @@
                 <div class="col-sm-1 col-md-1 col-md-1 col-lg-1">15</div>
             </div>
 
-            <!--<div class="row _tipos">
-                <div class="col-sm-3 col-md-3 col-lg-3  _div_bordes_lat">
-                    <p>1. INGRESO</p>
-                    <p>2. UBICACIÓN DE ESCALA</p>
-                    <p>3. ASCENSO</p>
-                    <p>4. CAMBIO ADMINISTRATIVO</p>
-                    <p>5. VACACIONES</p>
-                </div>
-                <div class="col-sm-1 col-md-1 col-lg-1 ">
-                    <p>1</p>
-                    <p>2</p>
-                    <p>3</p>
-                    <p>4</p>
-                    <p>5</p>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3  _div_bordes_lat">
-                    <p>6. SUBROGACIÓN</p>
-                    <p>7. ENCARGO</p>
-                    <p class="_tipos_8">8. COMISION DE SERVICIOS CON REMUNERACIÓN</p>
-                    <p>9. REVALORIZACIÓN</p>
-                    <p>10. CESE DE FUNCIONES</p>
-                </div>
-                <div class="col-sm-1 col-md-1 col-lg-1 ">
-                    <p>6</p>
-                    <p>7</p>
-                    <p>8</p>
-                    <p>9</p>
-                    <p>10</p>
-                </div>
-                <div class="col-sm-3 col-md-3 col-lg-3 _div_bordes_lat">
-                    <p>11. RENUNCIA</p>
-                    <p>12. SUPRESIÓN DE PUESTO</p>
-                    <p>13. DESTITUCIÓN</p>
-                    <p>14. JUBILACIÓN</p>
-                    <p>15. OTRO</p>
-                </div>
-                <div class="col-sm-1 col-md-1 col-lg-1 _div_bordes_lat_izq">
-                    <p>11</p>
-                    <p>12</p>
-                    <p>13</p>
-                    <p>14</p>
-                    <p>15</p>
-                </div>
-            </div>
-            <div class="row _div_bordes">
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 ">
-                        <div class="_div_adp">SITUACIÓN ACTUAL</div>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 ">
-                        <div class="_div_adp">SITUACIÓN PROPUESTA</div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-md-6 col-lg-6 ">
-                        <p>col-6</p>
-                    </div>
-                    <div class="col-sm-6 col-md-6 col-md-6 col-lg-6">
-                        <p>col-6</p>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <p>OBSERVACIONES</p>
-                </div>
-            </div>-->
+           
         </div>
     </div>
 
