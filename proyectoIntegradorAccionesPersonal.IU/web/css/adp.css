@@ -95,3 +95,10 @@ and open the template in the editor.
     border-right:  1px solid black;
 }
 
+._div_borde_medio{
+    border: 1px black solid;
+    border-left: 0px solid black;
+    border-top: 0px solid black;
+    border-bottom: 0px solid black;
+    border-right:  1px solid black;  
+}

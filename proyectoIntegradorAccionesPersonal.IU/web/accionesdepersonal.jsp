@@ -128,11 +128,53 @@
                 <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">5</div>
                 <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">10. CESE DE FUNCIONES</div>
                 <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">10</div>
-                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">15. OTROS</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">15. OTROS</div> 
                 <div class="col-sm-1 col-md-1 col-md-1 col-lg-1">15</div>
             </div>
 
-           
+            <div class="row _div_izq_aba_der">
+                <div class="col-sm-6 col-md-6 col-lg-6 _div_borde_medio" >
+                    <center>SITUACION ACTUAL<br></center><br>
+                    <b>DEPENDECIA: </b>FACULTAD DE MECANICA<br>
+                    <b>PUESTO: </b>PROFESOR PRINCIPAL TIEMPO COMPLETO NO ESCALAFONADO<br>
+                    <b>LUGAR DE TRABAJO: </b>RIOBAMBA - ESPOCH<br>
+                    <b>REMUNERACION MENSUAL: </b>4.000 USD<br>
+                    <b>REGIMEN: </b>LOES<br>
+                    <b>PARTIDA INDIVIDUAL: </b>910<br>
+                    <b>PARTIDA PRESUPUESTARIA: </b>20171639999000082000000010005106000030000000000<br><br>
+
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 ">
+                    <center><p>SITUACION PROPUESTA</p></center>
+                    <b>DEPENDECIA: </b>FACULTAD DE MECANICA<br>
+                    <b>PUESTO: </b>PROFESOR PRINCIPAL TIEMPO COMPLETO NO ESCALAFONADO PREVIO<br>
+                    <b>LUGAR DE TRABAJO: </b>RIOBAMBA - ESPOCH<br>
+                    <b>REMUNERACION MENSUAL: </b>4.000 USD<br>
+                    <b>REGIMEN: </b>LOES<br>
+                    <b>PARTIDA INDIVIDUAL: </b>910<br>
+                    <b>PARTIDA PRESUPUESTARIA: </b>20171639999000082000000010005106000030000000000<br><br>
+                </div>
+            </div>
+            <div class="row _div_izq_aba_der">
+                <div class="col-sm-6 col-md-6 col-lg-6 _div_borde_medio" >
+                    <br><br><br><br><br><br><br><br><br>
+                    <center>F.______________________________<br>
+                        Ing. Byron Ernerto Vaca Barahona, PhD.<br>
+                        RECTOR ESPOCH<br>
+                    </center>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 ">
+                    <br><br><br><br><br><br><br><br><br>
+                    <center>F.______________________________<br>
+                        Ing. Isabel Angulo, Msc.<br>
+                        DIRECTOR TALENTO HUMANO<br>
+                    </center>
+                </div>
+            </div>
+            <div class="row _div_izq_aba_der">
+                <p>OBSERVACIONES:</p>
+            </div>
+
         </div>
     </div>
 
