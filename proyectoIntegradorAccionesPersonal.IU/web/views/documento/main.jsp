@@ -300,7 +300,7 @@
                         <!-- barra de botones -->
                        
                         <!-- Histórico de observaciones -->
-                        <div class="form-group row">
+                        <!--<div class="form-group row">
                             <label for="txtObservaciones" class="col-xs-2 col-form-label">Hist&oacute;rico:</label>
                             <div class="col-xs-10">
                                 <dl>
@@ -321,7 +321,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>-->
 
             <!--Fin del Ejemplo del formato-->
 
