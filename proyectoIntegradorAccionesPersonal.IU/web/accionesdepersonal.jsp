@@ -36,19 +36,20 @@
 
     <div class="container">
         <div class="col-sm-12 col-md-12 col-md-12 col-lg-12">
+            
             <div class="row">
-                <div class="_div_bordes col-sm-4 col-md-4 col-md-4 col-lg-4">
-                    <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
+                <div class="_div_bordes col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
                         <p><img src="images/varias/LogoMDT.png" class="_img_ministerio"></p>              
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="row _div_bordes_med">
                         <div class="_div_med"><img src="images/varias/logoESPOCH.jpg" class="_img_espoch"></div>
                         <div><p class='_parrafo_espoch'>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO DIRECCION DE TALENTO HUMANO</p></div>                       
                     </div>
                 </div>
-                <div class="col-sm-4 col-md-4 col-md-4 col-lg-4 _div_adp">
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 _div_adp">
                     <div class="row _div_bordes">
                         <div class="_adp">ACCION DE PERSONAL</div>
                         <div class="_numero">No. 394.A.DTH.2017</div><br><br>
@@ -56,6 +57,9 @@
                     </div>
                 </div>
             </div>
+            
+            
+            
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
                     <div class="col-sm-12 col-md-12 col-lg-12">           
@@ -63,6 +67,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
                     <div class="col-12 _nombres">
@@ -71,20 +76,22 @@
                     </div>
                 </div>
             </div>
+            
             <div class="row _div_adp _div_bordes_inf">
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
                     <div>No. De Cédula de Ciudadanía</div><br>
                     <div>1705279295</div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4 _div_bordes_lat">
+                <div class="col-sm-4 col-md-4 col-md-4 col-lg-4 _div_bordes_lat">
                     <div>No. De Afiliación IESS</div><br>
                     <div>¿¿¿¿¿¿¿??????</div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-md-4 col-lg-4">
+                <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
                     <div>Rige a partir de</div><br>
                     <div>01 de septiembre de 2017</div>
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
                     <p>EXPLICACIÓN</p><br><br>
@@ -174,7 +181,6 @@
             <div class="row _div_izq_aba_der">
                 <p>OBSERVACIONES:</p>
             </div>
-
         </div>
     </div>
 
