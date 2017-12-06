@@ -23,8 +23,8 @@ public class wsAccionesPersonal {
     @WebMethod(operationName = "GuardarDatos")
     public void GuardarDatos(@WebParam(name = "resolucion") String resolucion, @WebParam(name = "cedula") String cedula, @WebParam(name = "apellido") String apellido, @WebParam(name = "nombre") String nombre) {
         //TODO write your implementation code here:
-        cOperacionesLN objSave = new cOperacionesLN();
-        objSave.save(resolucion,cedula,apellido,nombre);
+        cOperacionesLN oConsulta = new cOperacionesLN();
+        oConsulta.save(resolucion,cedula,apellido,nombre);
         
         
     }
