@@ -21,10 +21,10 @@
   response.sendRedirect("../Models/modelIngresarAccionesPersonal.jsp?cedula="+cedula+"&opcion="+opcion);
  }else
  {
- String resolucion = request.getParameter("resolucion");
+
  String apellido = request.getParameter("apellido");
  String nombre = request.getParameter("nombre");
- response.sendRedirect("../Models/modelIngresarAccionesPersonal.jsp?resolucion="+resolucion+"&cedula="+cedula+"&apellido="+apellido+"&nombre="+nombre+"&opcion="+opcion);
+ response.sendRedirect("../documento.jsp?cedula="+cedula+"&apellido="+apellido+"&nombre="+nombre);
  }
  
   

@@ -6,6 +6,10 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
+<%String cedula = request.getParameter("cedula");
+                                   String apellido = request.getParameter("apellido");
+                                    String nombre = request.getParameter("nombre");%> 
 <html ng-app="ddaPlantilla">
     <head>
         <title>ESPOCH | DDA</title>
