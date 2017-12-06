@@ -17,10 +17,11 @@ import javax.jws.WebParam;
 public class wsAccionesPersonal {
 
     /**
-     * This is a sample web service operation
+     * Web service operation
      */
-    @WebMethod(operationName = "hello")
-    public String hello(@WebParam(name = "name") String txt) {
-        return "Hello " + txt + " !";
+    @WebMethod(operationName = "GuardarDatos")
+    public void GuardarDatos(@WebParam(name = "resolucion") String resolucion, @WebParam(name = "cedula") String cedula, @WebParam(name = "apellido") String apellido, @WebParam(name = "nombre") String nombre) {
+        //TODO write your implementation code here:
+        
     }
 }
