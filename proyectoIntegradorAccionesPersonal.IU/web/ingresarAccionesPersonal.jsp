@@ -1,8 +1,8 @@
 
 <div class="form-group row">
-    <label for="example-text-input" class="col-xs-2 col-form-label">C&eacute;dula:</label>
+    <label for="example-text-input" class="col-xs-2 col-form-label">Resolucion:</label>
     <div class="col-xs-10">
-        <input class="form-control" type="text" placeholder="Número de cédula" id="example-text-input"  name="cedula">
+        <input class="form-control" type="text" placeholder="Resolucion No" id="example-text-input"  name="resolucion">
     </div>
 </div>
 <div class="form-group row">
@@ -14,13 +14,13 @@
 <div class="form-group row">
     <label for="example-text-input" class="col-xs-2 col-form-label">Apellido:</label>
     <div class="col-xs-10">
-        <input class="form-control" type="text" placeholder="Apellidos completos" id="example-text-input" name="reso">
+        <input class="form-control" type="text" placeholder="Apellidos completos" id="example-text-input" name="apellido">
     </div>
 </div>
 <div class="form-group row">
     <label for="example-text-input" class="col-xs-2 col-form-label">Nombre:</label>
     <div class="col-xs-10">
-        <input class="form-control" type="text" placeholder="Nombres completos" id="example-text-input">
+        <input class="form-control" type="text" placeholder="Nombres completos" id="example-text-input" name="nombre">
     </div>
 
         <div class="form-group row">
