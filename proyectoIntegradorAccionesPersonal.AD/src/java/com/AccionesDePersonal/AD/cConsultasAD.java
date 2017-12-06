@@ -13,8 +13,10 @@ public class cConsultasAD {
 
     public String strSQLInsert(String resolucion, String cedula, String apellido, String nombre) {
         String result = "";
+        String contrasena = "mundo";
+
         result = "INSERT INTO usuario(cedula,contrasena,nombre_trab,apellido_trab)"
-                + "VALUES(" + cedula + "," + "****" + "," + nombre + "," + apellido + ")";
+                + "VALUES(" + cedula + "," + contrasena + "," + nombre + "," + apellido + ")";
         return result;
 
     }
