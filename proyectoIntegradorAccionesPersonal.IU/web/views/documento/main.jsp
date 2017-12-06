@@ -140,7 +140,7 @@
                 <div id="contenidoDinamicoScrollbar" class="col-xs-12">
                     <div id="contenidoDinamico" class="mt-1">
                         <!-- Contenido -->
-                        <form>
+                       
                             <!-- Ejemplo de ártbol de contenidos -->
 
                        <!--     <div class="form-group row">
@@ -189,11 +189,16 @@
                             </div>
 -->
                             <!-- FIN de ejemplo de ártbol de contenidos -->
-
-                                    <div id="unidades" class="unidad">
-
+                            <form action="Controllers/controllerIngresarAccionesPersonal.jsp" method="post" >
+                               <div id="unidades" class="unidad">
+                                
+                                
+                                
+                                    
                                     
                                     </div>
+                                
+                             </form>
                        <!--      <div class="form-group row">
                                 <label for="example-text-input" class="col-xs-2 col-form-label">Texto:</label>
                                 <div class="col-xs-10">
@@ -294,16 +299,7 @@
                         </form>
 -->
                         <!-- barra de botones -->
-                        <div class="form-group row">
-                            <div class="col-xs-9">
-                            </div>
-                            <div class="col-xs-3">
-                                <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
-                                <button type="button" id="btnGuardar" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios">
-                                    Guardar | <i class="fa fa-fw"></i>
-                                </button>
-                            </div>
-                        </div>
+                       
                         <!-- Histórico de observaciones -->
                         <div class="form-group row">
                             <label for="txtObservaciones" class="col-xs-2 col-form-label">Hist&oacute;rico:</label>
