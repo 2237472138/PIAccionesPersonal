@@ -1,8 +1,36 @@
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+<script src="jquery.ui.datepicker-es.js"></script>
+
+
+
 <script type="text/javascript">
     function cargaContenido() {
         $('#unidades').load("ingresarAccionesPersonal.jsp");
     }
+ </script>
+ 
+
+<script>
+$(function () {
+$.datepicker.setDefaults($.datepicker.regional["es"]);
+$("#datepicker").datepicker({
+firstDay: 1,
+monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
+'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié;', 'Juv', 'Vie', 'Sáb'],
+dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
+weekHeader: 'Sm',
+dateFormat: 'dd/mm/yy'
+});
+});
 </script>
+
 
 <main id="mainContainer" class="container">
     <div id="contenidoEncabezadoAsignatura" class="row">
@@ -138,273 +166,282 @@
 
             <div class="row">
                 <div id="contenidoDinamicoScrollbar" class="col-xs-12">
-                    
-                        <!-- Contenido -->
 
-                        <!-- Ejemplo de ártbol de contenidos -->
+                    <!-- Contenido -->
 
-                        <!--     <div class="form-group row">
-                                 <label id="seccionEtiqueta" for="example-text-input" class="col-xs-2 form-control-label">Contenido:</label>
-                                 <div id="seccionContenido" class="col-xs-10">
- 
-                                     <div class="tema">
-                                         <div class="input-group">
-                                             <span class="input-group-addon">Tema: </span>
-                                             <input type="text" class="form-control" placeholder="Título del tema">
-                                             <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                             <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                         </div>
-                                     </div>
-                                     <div class="subtema">
-                                         <div class="input-group">
-                                             <span class="input-group-addon">Subtema: </span>
-                                             <input type="text" class="form-control" placeholder="Título del subtema">
-                                             <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                         </div>
-                                     </div>
-                                     <div class="subtema">
-                                         <div class="input-group">
-                                             <span class="input-group-addon">Subtema: </span>
-                                             <input type="text" class="form-control" placeholder="Título del subtema">
-                                             <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                         </div>
-                                     </div>
-                                     <div class="unidad">
-                                         <div class="input-group">
-                                             <span class="input-group-addon">Unidad: </span>
-                                             <input type="text" class="form-control" placeholder="Título de la unidad">
-                                             <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                             <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                         </div>
-                                     </div>
-                                     <div class="unidad">
-                                         <div class="input-group">
-                                             <span class="input-group-addon">Unidad: </span>
-                                             <input type="text" class="form-control" placeholder="Título de la unidad">
-                                             <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                             <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                         </div>
-                                     </div>
-                                 </div>
-                             </div>
-                        -->
-                        <!-- FIN de ejemplo de ártbol de contenidos -->
-                         <%String cedula = request.getParameter("cedula");
-                                    String apellido = request.getParameter("apellido");
-                                    String nombre = request.getParameter("nombre");
+                    <!-- Ejemplo de ártbol de contenidos -->
 
-                                %>
-                        <form action="Controllers/controllerIngresarAccionesPersonal.jsp" method="post" >
-                            <div id="unidades" class="unidad">   
-                               
-                              
-                                    <div class="form-group row">
-                                        <label for="example-text-input" class="col-xs-2 col-form-label">C&eacute;dula:</label>
-                                        <div class="col-xs-10">
-                                            <input class="form-control" type="text" placeholder="Número de cédula" id="example-text-input"  name="cedula" value="<%=cedula%>" >
-                                        </div>
-                                    </div>
-                                    <button type="submit" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" name="btn" value="verificar">
-                                        verificar | <i class="fa fa-fw"></i>
-                                    </button> 
-                                
+                    <!--     <div class="form-group row">
+                             <label id="seccionEtiqueta" for="example-text-input" class="col-xs-2 form-control-label">Contenido:</label>
+                             <div id="seccionContenido" class="col-xs-10">
 
-                                <div class="form-group row">
-                                    <label for="example-text-input" class="col-xs-2 col-form-label">Resolucion:</label>
-                                    <div class="col-xs-10">
-                                        <input class="form-control" type="text" placeholder="Resolucion No" id="example-text-input"  name="resolucion" >
-                                    </div>
-                                </div>
-
-                                <div class="form-group row">
-                                    <label for="example-text-input" class="col-xs-2 col-form-label">Apellido:</label>
-                                    <div class="col-xs-10">
-                                        <input class="form-control" type="text" placeholder="Apellidos completos" id="example-text-input" name="apellido" disabled="true" value="<%=apellido%>" >
-                                               </div>
-                                               </div>
-                                               <div class="form-group row">
-                                               <label for="example-text-input" class="col-xs-2 col-form-label">Nombre:</label>
-                                        <div class="col-xs-10">
-                                            <input class="form-control" type="text" placeholder="Nombres completos" id="example-text-input" name="nombre" disabled="true" value="<%=nombre%>" >
-                                                   </div>
-                                                   </div>
-
-                                                   <div class="form-group row">
-                                                   <label for="example-text-input" class="col-xs-2 col-form-label">No Afiliacion Al IEES:</label>
-                                            <div class="col-xs-10">
-                                                <input class="form-control" type="text" placeholder="No Afiliacion al IEES" id="example-text-input" name="nombre" disabled="true">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group row">
-                                            <label for="example-text-input" class="col-xs-2 col-form-label">Explicacion:</label>
-                                            <div class="col-xs-10">
-                                                <textarea rows="4" cols="100">
-                                                </textarea>
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-xs-9">
-                                        </div>
-                                        <div class="col-xs-3">
-                                            <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
-                                            <button type="submit" id="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="guardar">
-                                                Crear Accion | <i class="fa fa-fw"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-                                </div>
-                                </div>
-                        </form>
-                                                   
-                                </form>
-
-                        <!--      <div class="form-group row">
-                                 <label for="example-text-input" class="col-xs-2 col-form-label">Texto:</label>
-                                 <div class="col-xs-10">
-                                     <input class="form-control" type="text" placeholder="Texto de una sola línea" id="example-text-input">
-                                 </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="example-search-input" class="col-xs-2 col-form-label">Buscar:</label>
-                                 <div class="col-xs-10">
-                                     <input class="form-control" type="search" placeholder="Texto a buscar" id="example-search-input">
-                                 </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="example-email-input" class="col-xs-2 col-form-label">Email:</label>
-                                 <div class="col-xs-10">
+                                 <div class="tema">
                                      <div class="input-group">
-                                         <input class="form-control text-xs-right" type="email" placeholder="usuario" id="example-email-input">
-                                         <div class="input-group-addon">@espoch.edu.ec</div>
+                                         <span class="input-group-addon">Tema: </span>
+                                         <input type="text" class="form-control" placeholder="Título del tema">
+                                         <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
+                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
                                      </div>
                                  </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="example-url-input" class="col-xs-2 col-form-label">URL:</label>
-                                 <div class="col-xs-10">
-                                     <input class="form-control" type="url" placeholder="http://v4-alpha.getbootstrap.com/components/forms/" id="example-url-input">
+                                 <div class="subtema">
+                                     <div class="input-group">
+                                         <span class="input-group-addon">Subtema: </span>
+                                         <input type="text" class="form-control" placeholder="Título del subtema">
+                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
+                                     </div>
                                  </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="example-tel-input" class="col-xs-2 col-form-label">Tel&eacute;fono:</label>
-                                 <div class="col-xs-10">
-                                     <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="example-tel-input">
+                                 <div class="subtema">
+                                     <div class="input-group">
+                                         <span class="input-group-addon">Subtema: </span>
+                                         <input type="text" class="form-control" placeholder="Título del subtema">
+                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
+                                     </div>
                                  </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="example-password-input" class="col-xs-2 col-form-label">Clave:</label>
-                                 <div class="col-xs-10">
-                                     <input class="form-control" type="password" placeholder="clave" id="example-password-input">
+                                 <div class="unidad">
+                                     <div class="input-group">
+                                         <span class="input-group-addon">Unidad: </span>
+                                         <input type="text" class="form-control" placeholder="Título de la unidad">
+                                         <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
+                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
+                                     </div>
                                  </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="example-number-input" class="col-xs-2 col-form-label">N&uacute;mero:</label>
-                                 <div class="col-xs-10">
-                                     <input class="form-control" type="number" placeholder="42" id="example-number-input">
+                                 <div class="unidad">
+                                     <div class="input-group">
+                                         <span class="input-group-addon">Unidad: </span>
+                                         <input type="text" class="form-control" placeholder="Título de la unidad">
+                                         <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
+                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
+                                     </div>
                                  </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="example-date-input" class="col-xs-2 col-form-label">Fecha:</label>
-                                 <div class="col-xs-10">
-                                     <input class="form-control" type="date" placeholder="19-08-2010" id="example-date-input">
-                                 </div>
-                             </div> -->
-                        <!--  
-                             <div class="form-group row">
-                                 <label for="exampleSelect1" class="col-xs-2 col-form-label">Selecci&oacute;n:</label>
-                                 <div class="col-xs-10">
-                                     <select class="form-control" id="exampleSelect1">
-                                         <option>Valor 1</option>
-                                         <option>Valor 2</option>
-                                         <option>Valor 3</option>
-                                         <option>Valor 4</option>
-                                         <option>Valor 5</option>
-                                     </select>
-                                 </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="exampleSelect2" class="col-xs-2 col-form-label">Selecci&oacute;n m&uacute;ltiple:</label>
-                                 <div class="col-xs-10">
-                                     <select multiple class="form-control" id="exampleSelect2">
-                                         <option>Valor 1</option>
-                                         <option>Valor 2</option>
-                                         <option>Valor 3</option>
-                                         <option>Valor 4</option>
-                                         <option>Valor 5</option>
-                                     </select>
-                                 </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="exampleTextarea" class="col-xs-2 col-form-label">Texto:</label>
-                                 <div class="col-xs-10">
-                                     <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-                                 </div>
-                             </div>
-                             <div class="form-group row">
-                                 <label for="exampleInputFile" class="col-xs-2 col-form-label">Archivo:</label>
-                                 <div class="col-xs-10">
-                                     <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-                                     <small id="fileHelp" class="form-text text-muted">Archivo PDF...</small>
-                                 </div>
-                             </div>
-                        <!-- Observaciones -->
-
-                        <!--   <div class="form-group row">
-                             <label for="txtObservaciones" class="col-xs-2 col-form-label">Observaciones:</label>
-                             <div class="col-xs-10">
-                                 <textarea class="form-control bg-warning" id="txtObservaciones" rows="5" disabled="disabled"></textarea>
                              </div>
                          </div>
-                     </form>
-                        -->
-                        <!-- barra de botones -->
+                    -->
+                    <!-- FIN de ejemplo de ártbol de contenidos -->
+                    <%String cedula = request.getParameter("cedula");
+                        String apellido = request.getParameter("apellido");
+                        String nombre = request.getParameter("nombre");
 
-                        <!-- Histórico de observaciones -->
-                        <!--<div class="form-group row">
-                            <label for="txtObservaciones" class="col-xs-2 col-form-label">Hist&oacute;rico:</label>
-                            <div class="col-xs-10">
-                                <dl>
-                                    <dt>fecha 3</dt>
-                                    <dd class="ml-1">observaciones 1</dd>
-                                    <dd class="ml-1">observaciones 2</dd>
-                                    <dt>fecha 2</dt>
-                                    <dd class="ml-1">observaciones 1</dd>
-                                    <dd class="ml-1">observaciones 2</dd>
-                                    <dd class="ml-1">observaciones 3</dd>
-                                    <dt>fecha 1</dt>
-                                    <dd class="ml-1">observaciones 1</dd>
-                                    <dd class="ml-1">observaciones 2</dd>
-                                    <dd class="ml-1">observaciones 3</dd>
-                                    <dd class="ml-1">observaciones 4</dd>
-                                </dl>
+                    %>
+                  
+                    <form action="Controllers/controllerIngresarAccionesPersonal.jsp" method="post" >
+                        <div id="unidades" class="unidad">   
+
+
+                            <div class="form-group row">
+                                <label for="example-text-input" class="col-xs-2 col-form-label">C&eacute;dula:</label>
+                                <div class="col-xs-10">
+                                    <input class="form-control" type="text" placeholder="Número de cédula" id="example-text-input"  name="cedula" value="<%=cedula%>" >
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" name="btn" value="verificar">
+                                verificar | <i class="fa fa-fw"></i>
+                            </button> 
+
+
+                            <div class="form-group row">
+                                <label for="example-text-input" class="col-xs-2 col-form-label">Resolucion:</label>
+                                <div class="col-xs-10">
+                                    <input class="form-control" type="text" placeholder="Resolucion No" id="example-text-input"  name="resolucion" >
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="example-text-input" class="col-xs-2 col-form-label">Apellido:</label>
+                                <div class="col-xs-10">
+                                    <input class="form-control" type="text" placeholder="Apellidos completos" id="example-text-input" name="apellido" disabled="true" value="<%=apellido%>" >
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="example-text-input" class="col-xs-2 col-form-label">Nombre:</label>
+                                <div class="col-xs-10">
+                                    <input class="form-control" type="text" placeholder="Nombres completos" id="example-text-input" name="nombre" disabled="true" value="<%=nombre%>" >
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="example-text-input" class="col-xs-2 col-form-label">No Afiliacion Al IEES:</label>
+                                <div class="col-xs-10">
+                                    <input class="form-control" type="text" placeholder="No Afiliacion al IEES" id="example-text-input" name="nombre" disabled="true">
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="example-text-input" class="col-xs-2 col-form-label">Explicacion:</label>
+                                <div class="col-xs-10">
+                                    <textarea rows="4" cols="100">
+                                    </textarea>
+                                </div>
+
+                            </div>
+
+                            <!--calendario-->
+
+                            <input type="text" id="datepicker" />
+                            
+                           
+                            <!--calendario-->
+
+
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-xs-9">
+                            </div>
+                            <div class="col-xs-3">
+                                <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
+   
+                                <button type="submit" id="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="guardar">
+                                    Crear Accion | <i class="fa fa-fw"></i>
+                                </button>
                             </div>
                         </div>
-                    </div>
+
+
+                    </form>
+
+
+
+
                 </div>
-            </div>-->
+            </div>
+            </form>
 
-                        <!--Fin del Ejemplo del formato-->
+            </form>
 
-                        <div class="row dda-row">
-                            <div id="contenidoPie" class="col-xs-12">
-                                <i id="msgIcon" class="fa fa-spinner"></i>
-                                &nbsp;&nbsp;|&nbsp;&nbsp;
-                                <span id="msgText">Mensaje sobre el estado del proceso</span>
-                            </div>
-                        </div>
-                    
-                </div>            
-                </main>
-                <script src="js/documento/documento.js" type="text/javascript"></script>
+            <!--      <div class="form-group row">
+                     <label for="example-text-input" class="col-xs-2 col-form-label">Texto:</label>
+                     <div class="col-xs-10">
+                         <input class="form-control" type="text" placeholder="Texto de una sola línea" id="example-text-input">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="example-search-input" class="col-xs-2 col-form-label">Buscar:</label>
+                     <div class="col-xs-10">
+                         <input class="form-control" type="search" placeholder="Texto a buscar" id="example-search-input">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="example-email-input" class="col-xs-2 col-form-label">Email:</label>
+                     <div class="col-xs-10">
+                         <div class="input-group">
+                             <input class="form-control text-xs-right" type="email" placeholder="usuario" id="example-email-input">
+                             <div class="input-group-addon">@espoch.edu.ec</div>
+                         </div>
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="example-url-input" class="col-xs-2 col-form-label">URL:</label>
+                     <div class="col-xs-10">
+                         <input class="form-control" type="url" placeholder="http://v4-alpha.getbootstrap.com/components/forms/" id="example-url-input">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="example-tel-input" class="col-xs-2 col-form-label">Tel&eacute;fono:</label>
+                     <div class="col-xs-10">
+                         <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="example-tel-input">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="example-password-input" class="col-xs-2 col-form-label">Clave:</label>
+                     <div class="col-xs-10">
+                         <input class="form-control" type="password" placeholder="clave" id="example-password-input">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="example-number-input" class="col-xs-2 col-form-label">N&uacute;mero:</label>
+                     <div class="col-xs-10">
+                         <input class="form-control" type="number" placeholder="42" id="example-number-input">
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="example-date-input" class="col-xs-2 col-form-label">Fecha:</label>
+                     <div class="col-xs-10">
+                         <input class="form-control" type="date" placeholder="19-08-2010" id="example-date-input">
+                     </div>
+                 </div> -->
+            <!--  
+                 <div class="form-group row">
+                     <label for="exampleSelect1" class="col-xs-2 col-form-label">Selecci&oacute;n:</label>
+                     <div class="col-xs-10">
+                         <select class="form-control" id="exampleSelect1">
+                             <option>Valor 1</option>
+                             <option>Valor 2</option>
+                             <option>Valor 3</option>
+                             <option>Valor 4</option>
+                             <option>Valor 5</option>
+                         </select>
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="exampleSelect2" class="col-xs-2 col-form-label">Selecci&oacute;n m&uacute;ltiple:</label>
+                     <div class="col-xs-10">
+                         <select multiple class="form-control" id="exampleSelect2">
+                             <option>Valor 1</option>
+                             <option>Valor 2</option>
+                             <option>Valor 3</option>
+                             <option>Valor 4</option>
+                             <option>Valor 5</option>
+                         </select>
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="exampleTextarea" class="col-xs-2 col-form-label">Texto:</label>
+                     <div class="col-xs-10">
+                         <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+                     </div>
+                 </div>
+                 <div class="form-group row">
+                     <label for="exampleInputFile" class="col-xs-2 col-form-label">Archivo:</label>
+                     <div class="col-xs-10">
+                         <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                         <small id="fileHelp" class="form-text text-muted">Archivo PDF...</small>
+                     </div>
+                 </div>
+            <!-- Observaciones -->
+
+            <!--   <div class="form-group row">
+                 <label for="txtObservaciones" class="col-xs-2 col-form-label">Observaciones:</label>
+                 <div class="col-xs-10">
+                     <textarea class="form-control bg-warning" id="txtObservaciones" rows="5" disabled="disabled"></textarea>
+                 </div>
+             </div>
+         </form>
+            -->
+            <!-- barra de botones -->
+
+            <!-- Histórico de observaciones -->
+            <!--<div class="form-group row">
+                <label for="txtObservaciones" class="col-xs-2 col-form-label">Hist&oacute;rico:</label>
+                <div class="col-xs-10">
+                    <dl>
+                        <dt>fecha 3</dt>
+                        <dd class="ml-1">observaciones 1</dd>
+                        <dd class="ml-1">observaciones 2</dd>
+                        <dt>fecha 2</dt>
+                        <dd class="ml-1">observaciones 1</dd>
+                        <dd class="ml-1">observaciones 2</dd>
+                        <dd class="ml-1">observaciones 3</dd>
+                        <dt>fecha 1</dt>
+                        <dd class="ml-1">observaciones 1</dd>
+                        <dd class="ml-1">observaciones 2</dd>
+                        <dd class="ml-1">observaciones 3</dd>
+                        <dd class="ml-1">observaciones 4</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>-->
+
+            <!--Fin del Ejemplo del formato-->
+
+            <div class="row dda-row">
+                <div id="contenidoPie" class="col-xs-12">
+                    <i id="msgIcon" class="fa fa-spinner"></i>
+                    &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <span id="msgText">Mensaje sobre el estado del proceso</span>
+                </div>
+            </div>
+
+        </div>            
+</main>
+<script src="js/documento/documento.js" type="text/javascript"></script>
