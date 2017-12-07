@@ -7,44 +7,34 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
-<<<<<<< HEAD
- String opcion= request.getParameter("opcion");
-String cedula =request.getParameter("cedula");
 
-if(cedula!=null && opcion.equals("verificar"))
- {
-   //consulta
-String apellido ="Aguayo";
-String nombre = "Stteffano";
-     
- response.sendRedirect("../Controllers/controllerIngresarAccionesPersonal.jsp?cedula="+cedula+"&apellido="+apellido+"&nombre="+nombre);
- }
+    com.AccionesDePersonal.WSC.WsAccionesPersonal_Service service = new com.AccionesDePersonal.WSC.WsAccionesPersonal_Service();
+    com.AccionesDePersonal.WSC.WsAccionesPersonal port = service.getWsAccionesPersonalPort();
 
+    String opcion = request.getParameter("opcion");
+    String cedula = request.getParameter("cedula");
 
+    if (cedula != null && opcion.equals("verificar")) {
+        //consulta
+        String apellido = "Aguayo";
+        String nombre = "Stteffano";
 
-/*
-<<<<<<< HEAD
-=======
-	com.accionesdepersonal.ws.WsAccionesPersonal_Service service = new com.accionesdepersonal.ws.WsAccionesPersonal_Service();
-	com.accionesdepersonal.ws.WsAccionesPersonal port = service.getWsAccionesPersonalPort();
-	port.guardarDatos(resolucion, cedula, apellido, nombre);
-    }
->>>>>>> 668617625fbccab56572688c6b101b61985f5e98*/
-=======
-        String opcion = request.getParameter("btn");
-        String cedula = request.getParameter("cedula");
-
-        if (cedula != null && opcion != null) {
-            //consulta
-        }
-        String resolucion = request.getParameter("resolucion");
-        String apellido = request.getParameter("apellido");
-        String nombre = request.getParameter("nombre");
-
-        com.accionesdepersonal.ws.WsAccionesPersonal_Service service = new com.accionesdepersonal.ws.WsAccionesPersonal_Service();
-        com.accionesdepersonal.ws.WsAccionesPersonal port = service.getWsAccionesPersonalPort();
-        port.guardarDatos(resolucion, cedula, apellido, nombre);
+        response.sendRedirect("../Controllers/controllerIngresarAccionesPersonal.jsp?cedula=" + cedula + "&apellido=" + apellido + "&nombre=" + nombre);
     }
 
->>>>>>> 4d71f941bea6f143bd143d3792c6fc3451021d26
+    if (cedula != null && opcion != null) {
+        //consulta
+    }
+    String resolucion = request.getParameter("resolucion");
+    String apellido = request.getParameter("apellido");
+    String nombre = request.getParameter("nombre");
+
+    Integer resultAP = port.guardarDatosAP(resolucion, cedula, apellido, nombre);
+
+    //INFORMACION DE LA TABLA DE ACCIONES DE PERSONAL
+    /*java.lang.String apellidoAP = port.getApellido(apellido);
+    java.lang.String cedulaAP = port.getCedula(cedula);
+    java.lang.String nombreAP = port.getNombre(nombre);
+    java.lang.String resolucionAP = port.getResolucion(resolucion);*/
+
 %>

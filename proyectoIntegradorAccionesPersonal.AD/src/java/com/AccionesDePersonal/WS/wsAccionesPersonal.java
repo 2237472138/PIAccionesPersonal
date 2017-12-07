@@ -6,7 +6,6 @@
 package com.AccionesDePersonal.WS;
 
 import com.AccionesDePersonal.LN.cOperacionesLN;
-import javax.jws.Oneway;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -18,9 +17,52 @@ import javax.jws.WebParam;
 @WebService(serviceName = "wsAccionesPersonal")
 public class wsAccionesPersonal {
 
-    public Integer prueba(@WebParam(name = "resolucion") final String resolucion, @WebParam(name = "cedula") final String cedula, @WebParam(name = "apellido") final String apellido, @WebParam(name = "nombre") final String nombre) {
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "GuardarDatosAP")
+    public Integer GuardarDatosAP(@WebParam(name = "resolucion") String resolucion, @WebParam(name = "cedula") String cedula, @WebParam(name = "apellido") String apellido, @WebParam(name = "nombre") String nombre) {
+        //TODO write your implementation code here:
+        cOperacionesLN oOperacionesLN = new cOperacionesLN();
 
-        cOperacionesLN oOperacion = new cOperacionesLN();
-        return oOperacion.save(resolucion, cedula, apellido, nombre);
+        return oOperacionesLN.save(resolucion, cedula, apellido, nombre);
     }
+
+    /**
+     * Web service operation
+     */
+    //1400788020
+    @WebMethod(operationName = "getResolucion")
+    public String getResolucion(@WebParam(name = "resolucion") String resolucion) {
+        cOperacionesLN oOperacionesLN = new cOperacionesLN();
+        return oOperacionesLN.getResolucion();
+    }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "getCedula")
+    public String getCedula(@WebParam(name = "cedula") String cedula) {
+        cOperacionesLN oOperacionesLN = new cOperacionesLN();
+        return oOperacionesLN.getCedula();
+    }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "getApellido")
+    public String getApellido(@WebParam(name = "apellido") String apellido) {
+        cOperacionesLN oOperacionesLN = new cOperacionesLN();
+        return oOperacionesLN.getApellido();
+    }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "getNombre")
+    public String getNombre(@WebParam(name = "nombre") String nombre) {
+        cOperacionesLN oOperacionesLN = new cOperacionesLN();
+        return oOperacionesLN.getNombre();
+    }
+
 }

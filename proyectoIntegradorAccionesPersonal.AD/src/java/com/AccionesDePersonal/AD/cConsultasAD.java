@@ -12,10 +12,40 @@ package com.AccionesDePersonal.AD;
 public class cConsultasAD {
 
     public String strSQLInsert(String resolucion, String cedula, String apellido, String nombre) {
-        String result = "INSERT INTO prueba(resolucion, cedula, apellido, nombre)"
-                + "VALUES(" + resolucion + "," + cedula + "," + apellido + "," + nombre + ")";
+        String resolucion1 = resolucion;
+        String cedula1 = resolucion;
+        String apellido1 = resolucion;
+        String nombre1 = resolucion;
+
+        String result = "INSERT INTO accionp(\n"
+                + "            resolucion, cedula, apellido, nombre)\n"
+                + "    VALUES (" + resolucion1 + "," + cedula1 + ", " + apellido1 + ", " + nombre1 + ");";
         return result;
 
+    }
+
+    public String strSQLSelectResolucion() {
+        String result = "SELECT resolucion\n"
+                + "  FROM accionp;";
+        return result;
+    }
+
+    public String strSQLSelectCedula() {
+        String result = "SELECT cedula\n"
+                + "  FROM accionp;";
+        return result;
+    }
+
+    public String strSQLSelectApellido() {
+        String result = "SELECT apellido\n"
+                + "  FROM accionp;";
+        return result;
+    }
+
+    public String strSQLSelectNombre() {
+        String result = "SELECT nombre\n"
+                + "  FROM accionp;";
+        return result;
     }
 
 }
