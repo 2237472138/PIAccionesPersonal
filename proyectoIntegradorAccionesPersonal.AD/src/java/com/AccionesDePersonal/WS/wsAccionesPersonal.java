@@ -6,6 +6,7 @@
 package com.AccionesDePersonal.WS;
 
 import com.AccionesDePersonal.LN.cOperacionesLN;
+import javax.jws.Oneway;
 import javax.jws.WebService;
 import javax.jws.WebMethod;
 import javax.jws.WebParam;
@@ -17,15 +18,9 @@ import javax.jws.WebParam;
 @WebService(serviceName = "wsAccionesPersonal")
 public class wsAccionesPersonal {
 
-    /**
-     * Web service operation
-     */
-    @WebMethod(operationName = "GuardarDatos")
-    public void GuardarDatos(@WebParam(name = "resolucion") String resolucion, @WebParam(name = "cedula") String cedula, @WebParam(name = "apellido") String apellido, @WebParam(name = "nombre") String nombre) {
-        //TODO write your implementation code here:
+    public Integer prueba(@WebParam(name = "resolucion") final String resolucion, @WebParam(name = "cedula") final String cedula, @WebParam(name = "apellido") final String apellido, @WebParam(name = "nombre") final String nombre) {
+
         cOperacionesLN oOperacion = new cOperacionesLN();
-        oOperacion.save(resolucion,cedula,apellido,nombre);
-        
-        
+        return oOperacion.save(resolucion, cedula, apellido, nombre);
     }
 }

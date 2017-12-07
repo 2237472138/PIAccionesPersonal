@@ -15,14 +15,15 @@ import com.AccionesDePersonal.AD.cConsultasAD;
  * @author alexa
  */
 public class cOperacionesLN {
-    
-    public Integer save(String resolucion,String cedula,String apellido,String nombre) {
+
+    public Integer save(String resolucion, String cedula, String apellido, String nombre) {
         Integer result = -1;
-         cAccesoDatos ad = new cAccesoDatos();
+        cAccesoDatos ad = new cAccesoDatos();
         try {
             cConsultasAD oConsultasAD = new cConsultasAD();
             String strSQL = oConsultasAD.strSQLInsert(resolucion, cedula, apellido, nombre);
-            if (ad.Connectar() == 2) {
+            int aux = ad.Connectar();
+            if (aux == 2) {
                 ad.BeginTran();
                 ad.CommitTran();
                 result = ad.EjecutarUpdate(strSQL);
