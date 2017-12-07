@@ -4,6 +4,7 @@
  * and open the template in the editor.
  */
 package com.ConexionBaseDatos;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -89,7 +90,6 @@ public class cAccesoDatos {
     }
 
     /*itra forma de utilizar los sql */
-
     public Integer EjecutarUpdate(String SQL) {
         Integer result = 0;
         try {
@@ -120,7 +120,7 @@ public class cAccesoDatos {
             log.severe(e.getMessage());
         }
     }
-    
+
     public void CommitTran() {
         try {
             if (this.con != null) {
@@ -144,6 +144,5 @@ public class cAccesoDatos {
             log.severe(e.getMessage());
         }
     }
-    
-}
 
+}
