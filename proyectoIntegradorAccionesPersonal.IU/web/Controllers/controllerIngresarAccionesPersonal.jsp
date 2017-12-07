@@ -8,30 +8,31 @@
 <%@page import="javax.ejb.Timeout"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<% 
-    
- try{
- Integer intervalo = 1;
+<%
 
- String opcion= request.getParameter("btn");
- String cedula =request.getParameter("cedula");
- if(cedula!=null && opcion!=null)
- {
-     
-  response.sendRedirect("../Models/modelIngresarAccionesPersonal.jsp?cedula="+cedula+"&opcion="+opcion);
- }else
- {
+    try {
+        Integer intervalo = 1;
 
- String apellido = request.getParameter("apellido");
- String nombre = request.getParameter("nombre");
- response.sendRedirect("../documento.jsp?cedula="+cedula+"&apellido="+apellido+"&nombre="+nombre);
- }
- 
-  
- 
+        String opcion = request.getParameter("btn");
+        String cedula = request.getParameter("cedula");
+        if (cedula != null && opcion.equals("verificar")) {
 
- }catch(Exception e){}
+            response.sendRedirect("../Models/modelIngresarAccionesPersonal.jsp?cedula=" + cedula + "&opcion=" + opcion);
+        } else {
+            if (cedula != null && opcion.equals("guardar")) {
+                   String apellido = request.getParameter("apellido");
+                String nombre = request.getParameter("nombre"); 
+                response.sendRedirect("../Models/modelIngresarAccionesPersonal.jsp?cedula=" + cedula + "&opcion=" + opcion+"&apellido="+apellido+"&nombre="+nombre);
+            } else {
+
+                String apellido = request.getParameter("apellido");
+                String nombre = request.getParameter("nombre");
+                response.sendRedirect("../documento.jsp?cedula=" + cedula + "&apellido=" + apellido + "&nombre=" + nombre);
+            }
+        }
+
+    } catch (Exception e) {
+    }
 
 
- 
 %>
