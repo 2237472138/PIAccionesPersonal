@@ -9,7 +9,9 @@
 
 <%String cedula = request.getParameter("cedula");
     String apellido = request.getParameter("apellido");
-    String nombre = request.getParameter("nombre");%>
+    String nombre = request.getParameter("nombre");
+    String  explicacion= request.getParameter("explicacion");
+    String  resolucion= request.getParameter("resolucion"); %>
     
      
 <html ng-app="ddaPlantilla" >
