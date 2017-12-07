@@ -43,7 +43,11 @@ String nombre = "Stteffano";
        
        String apellido = request.getParameter("apellido");
        String nombre = request.getParameter("nombre");
-       
+        String  explicacion= request.getParameter("explicacion");
+        String  resolucion= request.getParameter("resolucion");
+        
+        
+  
        //n consulta de guardado
   }
 
