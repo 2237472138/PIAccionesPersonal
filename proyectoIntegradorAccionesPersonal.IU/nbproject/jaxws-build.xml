@@ -15,7 +15,6 @@
                 JAX-WS WSIMPORT SECTION
                 ===================
             -->
-<<<<<<< HEAD
     <target name="wsimport-init" depends="init">
         <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
         <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
@@ -44,6 +43,4 @@
         <delete dir="${build.generated.dir}/jax-wsCache/wsAccionesPersonal"/>
     </target>
     <target name="wsimport-client-generate" depends="wsimport-client-wsAccionesPersonal"/>
-=======
->>>>>>> 6dbb453b294a41cc53775b74cf0785dbed8ec7d4
 </project>

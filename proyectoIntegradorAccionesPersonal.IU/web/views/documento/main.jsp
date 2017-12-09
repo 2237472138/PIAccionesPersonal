@@ -222,7 +222,7 @@ dateFormat: 'dd/mm/yy'
                         String nombre = request.getParameter("nombre");
                          String  explicacion= request.getParameter("explicacion");
                       String  resolucion= request.getParameter("resolucion"); 
-
+                       String fecha = request.getParameter("fecha");
                     %>
                   
                     <form action="Controllers/controllerIngresarAccionesPersonal.jsp" method="post" >
@@ -279,7 +279,7 @@ dateFormat: 'dd/mm/yy'
 
                             <!--calendario-->
 
-                            <input type="text" id="datepicker" name="fecha" />
+                            <input type="text" id="datepicker" name="fecha"  value="<%=fecha%>"/>
                             
                            
                             <!--calendario-->
@@ -294,6 +294,19 @@ dateFormat: 'dd/mm/yy'
    
                                 <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="guardar">
                                     Crear Accion | <i class="fa fa-fw"></i>
+                                </button>
+                            </div>
+                        </div>
+                                    
+                                    
+                          <div class="form-group row">
+                            <div class="col-xs-9">
+                            </div>
+                            <div class="col-xs-3">
+                                <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
+   
+                                <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="mostrar">
+                                    Mostrar| <i class="fa fa-fw"></i>
                                 </button>
                             </div>
                         </div>

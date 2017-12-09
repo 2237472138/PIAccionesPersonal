@@ -6,7 +6,13 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-
+<%String apellido = request.getParameter("apellido");
+    String nombre = request.getParameter("nombre");
+    String explicacion = request.getParameter("explicacion");
+    String resolucion = request.getParameter("resolucion");
+    String cedula = request.getParameter("cedula");
+    String fecha = request.getParameter("fecha");
+%>
 <head>
     <title>ESPOCH | DDA</title>
     <meta charset="utf-8">
@@ -36,7 +42,7 @@
 
     <div class="container">
         <div class="col-sm-12 col-md-12 col-md-12 col-lg-12">
-            
+
             <div class="row">
                 <div class="_div_bordes col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="col-sm-4 col-md-4 col-lg-4">
@@ -57,30 +63,30 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
+
+
+
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
                     <div class="col-sm-12 col-md-12 col-lg-12">           
-                        <p>RESOLUCION 381.CP.2017</p>
+                        <p><%=resolucion%></p>
                     </div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
                     <div class="col-12 _nombres">
-                        <div>MATHEU AGUILAR HUMBERTO ABELARDO</div>
+                        <div><%=apellido%> <%=nombre%> </div>
                         <div>APELLIDOS Y NOMBRES</div>
                     </div>
                 </div>
             </div>
-            
+
             <div class="row _div_adp _div_bordes_inf">
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
-                    <div>No. De Cédula de Ciudadanía</div><br>
-                    <div>1705279295</div>
+                    <div><%=cedula%></div><br>
+                  
                 </div>
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4 _div_bordes_lat">
                     <div>No. De Afiliación IESS</div><br>
@@ -91,10 +97,10 @@
                     <div>01 de septiembre de 2017</div>
                 </div>
             </div>
-            
+
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
-                    <p>EXPLICACIÓN</p><br><br>
+                    <p><%=explicacion%></p><br><br>
                 </div>
             </div>
 
