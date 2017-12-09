@@ -47,5 +47,4 @@ public class cConsultasAD {
                 + "  FROM accionp;";
         return result;
     }
-
 }
