@@ -54,7 +54,6 @@ public class cAccesoDatos {
         } finally {
             return result;
         }
-
     }
 
     public Byte Desconectar() {
@@ -144,5 +143,4 @@ public class cAccesoDatos {
             log.severe(e.getMessage());
         }
     }
-
 }
