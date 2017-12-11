@@ -21,7 +21,7 @@ public class cConsultasAD {
         Calendar cal = Calendar.getInstance();
 
         String fecha = cal.get(cal.DATE) + "/" + cal.get(cal.MONTH) + "/" + cal.get(cal.YEAR);
-        
+
         String result = "INSERT INTO public.accion_personal(\n"
                 + "            fecha_creada_ap, resolucion_ap, fecha_rige_ap, explicacion_ap, \n"
                 + "            numero_ap, cedula_trabajador, numero_tipo, cedula_usuario, observaciones_ap, \n"
