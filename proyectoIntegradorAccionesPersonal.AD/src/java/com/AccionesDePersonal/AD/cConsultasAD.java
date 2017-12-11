@@ -9,7 +9,6 @@ package com.AccionesDePersonal.AD;
 
 import java.util.Calendar;
 
->>>>>>> 2935c3e7fc5321a1f188596f6cb05110827dfd1a
 /**
  *
  * @author alexa
