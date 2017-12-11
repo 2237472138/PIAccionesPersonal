@@ -4,8 +4,7 @@
  * and open the template in the editor.
  */
 package com.AccionesDePersonal.AD;
-<<<<<<< HEAD
-=======
+
 
 import java.util.Calendar;
 
