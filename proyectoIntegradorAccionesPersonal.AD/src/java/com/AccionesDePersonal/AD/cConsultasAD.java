@@ -5,21 +5,39 @@
  */
 package com.AccionesDePersonal.AD;
 
+import java.util.Calendar;
+
 /**
  *
  * @author alexa
  */
 public class cConsultasAD {
 
-    public String strSQLInsert(String resolucion, String cedula, String apellido, String nombre) {
-        String resolucion1 = resolucion;
-        String cedula1 = resolucion;
-        String apellido1 = resolucion;
-        String nombre1 = resolucion;
+    public String strSQLInsertAccionPersonal(String resolucion, String cedula) {
 
-        String result = "INSERT INTO accionp(\n"
-                + "            resolucion, cedula, apellido, nombre)\n"
-                + "    VALUES (" + resolucion1 + "," + cedula1 + ", " + apellido1 + ", " + nombre1 + ");";
+        String nulo = "xxxx";
+        String numero_ap = "510.M.DTH.2020";
+        Integer numero_tipo = 5;
+        Calendar cal = Calendar.getInstance();
+
+        String fecha = cal.get(cal.DATE) + "/" + cal.get(cal.MONTH) + "/" + cal.get(cal.YEAR);
+        
+        String result = "INSERT INTO public.accion_personal(\n"
+                + "            fecha_creada_ap, resolucion_ap, fecha_rige_ap, explicacion_ap, \n"
+                + "            numero_ap, cedula_trabajador, numero_tipo, cedula_usuario, observaciones_ap, \n"
+                + "            digitalizado_ap, rector_ap, director_th_ap)\n"
+                + "    VALUES (' " + fecha + "', ' " + resolucion + "', ' " + fecha + "', ' " + nulo + "', \n"
+                + "            ' " + numero_ap + "', ' " + cedula + "'," + numero_tipo + ", ' " + nulo + "', ' " + nulo + "', \n"
+                + "            ' " + nulo + "', ' " + nulo + "', ' " + nulo + "')";
+        return result;
+
+    }
+
+    public String strSQLInsertTrabajador(String cedula, String apellido, String nombre) {
+        int iess = 500;
+        String result = "INSERT INTO public.trabajador(\n"
+                + "	cedula_trabajador, nombre_trabajador, apellido_trabajador, n_afi_iees_trabajador)\n"
+                + "	VALUES (' " + cedula + "', ' " + nombre + "',  ' " + apellido + "'," + iess + ")";
         return result;
 
     }
@@ -47,4 +65,5 @@ public class cConsultasAD {
                 + "  FROM accionp;";
         return result;
     }
+
 }

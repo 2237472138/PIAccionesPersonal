@@ -20,17 +20,6 @@ public class wsAccionesPersonal {
     /**
      * Web service operation
      */
-    @WebMethod(operationName = "GuardarDatosAP")
-    public Integer GuardarDatosAP(@WebParam(name = "resolucion") String resolucion, @WebParam(name = "cedula") String cedula, @WebParam(name = "apellido") String apellido, @WebParam(name = "nombre") String nombre) {
-        //TODO write your implementation code here:
-        cOperacionesLN oOperacionesLN = new cOperacionesLN();
-
-        return oOperacionesLN.save(resolucion, cedula, apellido, nombre);
-    }
-
-    /**
-     * Web service operation
-     */
     //1400788020
     @WebMethod(operationName = "getResolucion")
     public String getResolucion(@WebParam(name = "resolucion") String resolucion) {
@@ -63,6 +52,17 @@ public class wsAccionesPersonal {
     public String getNombre(@WebParam(name = "nombre") String nombre) {
         cOperacionesLN oOperacionesLN = new cOperacionesLN();
         return oOperacionesLN.getNombre();
+    }
+
+    /**
+     * Web service operation
+     */
+    @WebMethod(operationName = "GuardarDatosAP")
+    public String GuardarDatosAP(@WebParam(name = "resolucion") String resolucion, @WebParam(name = "cedula") String cedula, @WebParam(name = "nombre") String nombre, @WebParam(name = "apellido") String apellido) {
+
+        cOperacionesLN oOperacionesLN = new cOperacionesLN();
+
+        return oOperacionesLN.save(resolucion, cedula, nombre, apellido);
     }
 
 }

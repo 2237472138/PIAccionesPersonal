@@ -16,24 +16,23 @@ import com.AccionesDePersonal.AD.cConsultasAD;
  */
 public class cOperacionesLN {
 
-    private String strSQL;
+    private String strSQL, strSQL1;
 
-    public Integer save(String resolucion, String cedula, String apellido, String nombre) {
-        String resolucion1 = resolucion;
-        String cedula1 = resolucion;
-        String apellido1 = resolucion;
-        String nombre1 = resolucion;
-
-        Integer result = -1;
+    public String save(String resolucion, String cedula, String nombre, String apellido) {
+        Integer result = -1,result1 = -1;
+        String mensaje = "No se guardo en la base de datos";
         cAccesoDatos ad = new cAccesoDatos();
         try {
             cConsultasAD oConsultasAD = new cConsultasAD();
-            String strSQL = oConsultasAD.strSQLInsert(resolucion1, cedula1, apellido1, nombre1);
+            strSQL = oConsultasAD.strSQLInsertAccionPersonal(resolucion, cedula);
+            strSQL1 = oConsultasAD.strSQLInsertTrabajador(cedula,apellido, nombre);
             int aux = ad.Connectar();
             if (aux == 2) {
                 ad.BeginTran();
                 ad.CommitTran();
-                result = ad.EjecutarUpdate(strSQL);
+                result = ad.EjecutarUpdate(strSQL);     //si nos da error cambiar el nombre de la variable
+                result1 = ad.EjecutarUpdate(strSQL1);
+                mensaje = "Datos Guardados Correctamente";
                 ad.Desconectar();
             }
         } catch (Exception e) {
@@ -42,7 +41,7 @@ public class cOperacionesLN {
             ad.RollbackTran();
 
         } finally {
-            return result;
+            return mensaje;
         }
     }
 
@@ -51,7 +50,7 @@ public class cOperacionesLN {
         cAccesoDatos ad = new cAccesoDatos();
         try {
             cConsultasAD oConsultasAD = new cConsultasAD();
-            String strSQL = oConsultasAD.strSQLSelectResolucion();
+            strSQL = oConsultasAD.strSQLSelectResolucion();
             int aux = ad.Connectar();
             if (aux == 2) {
                 ad.BeginTran();
