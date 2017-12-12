@@ -87,11 +87,15 @@
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
                      <div>No. De Cédula de Ciudadanía</div>
                     <div><%=cedula%></div><br>
-                  
+
                 </div>
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4 _div_bordes_lat">
                     <div>No. De Afiliación IESS</div><br>
+<<<<<<< HEAD
                     <div>xxxxxxxaxxxx</div>
+=======
+                    <div>&nbsp;&nbsp;&nbsp;</div>
+>>>>>>> b38d34bd2cfe2dd9ad71889e18073aa8bd0ce47c
                 </div>
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
                     <div>Rige a partir de</div><br>

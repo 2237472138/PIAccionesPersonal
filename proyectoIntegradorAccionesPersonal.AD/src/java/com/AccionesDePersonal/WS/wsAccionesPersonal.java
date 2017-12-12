@@ -17,51 +17,100 @@ import javax.jws.WebParam;
 @WebService(serviceName = "wsAccionesPersonal")
 public class wsAccionesPersonal {
 
-    /**
-     * Web service operation
-     */
-    //1400788020
-    @WebMethod(operationName = "getResolucion")
-    public String getResolucion(@WebParam(name = "resolucion") String resolucion) {
-        cOperacionesLN oOperacionesLN = new cOperacionesLN();
-        return oOperacionesLN.getResolucion();
+    cOperacionesLN oOperacionesLN = new cOperacionesLN();
+
+    @WebMethod(operationName = "getResolucionAp")
+    public String getResolucion(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getResolucionAp(cedula);
     }
 
-    /**
-     * Web service operation
-     */
-    @WebMethod(operationName = "getCedula")
-    public String getCedula(@WebParam(name = "cedula") String cedula) {
-        cOperacionesLN oOperacionesLN = new cOperacionesLN();
-        return oOperacionesLN.getCedula();
-    }
-
-    /**
-     * Web service operation
-     */
     @WebMethod(operationName = "getApellido")
-    public String getApellido(@WebParam(name = "apellido") String apellido) {
-        cOperacionesLN oOperacionesLN = new cOperacionesLN();
-        return oOperacionesLN.getApellido();
+    public String getApellido(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getApellido(cedula);
     }
 
-    /**
-     * Web service operation
-     */
     @WebMethod(operationName = "getNombre")
-    public String getNombre(@WebParam(name = "nombre") String nombre) {
-        cOperacionesLN oOperacionesLN = new cOperacionesLN();
-        return oOperacionesLN.getNombre();
+    public String getNombre(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getNombre(cedula);
     }
 
-    /**
-     * Web service operation
-     */
+    @WebMethod(operationName = "getFechaCreada")
+    public String getFechaCreada(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getFechaCreada(cedula);
+    }
+
+    @WebMethod(operationName = "getFechaRige")
+    public String getFechaRige(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getFechaRige(cedula);
+    }
+
+    @WebMethod(operationName = "getExplicacionAp")
+    public String getExplicacionAp(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getExplicacionAp(cedula);
+    }
+
+    @WebMethod(operationName = "getNumeroTipo")
+    public String getNumeroTipo(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getNumeroTipo(cedula);
+    }
+
+    @WebMethod(operationName = "getObservacionesAp")
+    public String getObservacionesAp(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getObservacionesAp(cedula);
+    }
+
+    @WebMethod(operationName = "getRectorAp")
+    public String getRectorAp(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getRectorAp(cedula);
+    }
+
+    @WebMethod(operationName = "getDirectorThAp")
+    public String getDirectorThAp(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getDirectorThAp(cedula);
+    }
+
+    @WebMethod(operationName = "getNumeroIessTrabajador")
+    public String getNumeroIessTrabajador(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getNumeroIessTrabajador(cedula);
+    }
+
+    @WebMethod(operationName = "getDependenciaSituacion")
+    public String getDependenciaSituacion(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getDependenciaSituacion(cedula);
+    }
+
+    @WebMethod(operationName = "getPuestoSituacion")
+    public String getPuestoSituacion(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getPuestoSituacion(cedula);
+    }
+
+    @WebMethod(operationName = "getLugarSituacion")
+    public String getLugarSituacion(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getLugarSituacion(cedula);
+    }
+
+    @WebMethod(operationName = "getEstadoSituacion")
+    public String getEstadoSituacion(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getEstadoSituacion(cedula);
+    }
+
+    @WebMethod(operationName = "getPartIndSituacion")
+    public String getPartIndSituacion(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getPartIndSituacion(cedula);
+    }
+
+    @WebMethod(operationName = "getPartPresuSituacion")
+    public String getPartPresuSituacion(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getPartPresuSituacion(cedula);
+    }
+
+    @WebMethod(operationName = "getRemuMenSituacion")
+    public String getRemuMenSituacion(@WebParam(name = "cedula") String cedula) {
+        return oOperacionesLN.getRemuMenSituacion(cedula);
+    }
+
     @WebMethod(operationName = "GuardarDatosAP")
     public String GuardarDatosAP(@WebParam(name = "resolucion") String resolucion, @WebParam(name = "cedula") String cedula, @WebParam(name = "nombre") String nombre, @WebParam(name = "apellido") String apellido) {
-
-        cOperacionesLN oOperacionesLN = new cOperacionesLN();
-
         return oOperacionesLN.save(resolucion, cedula, nombre, apellido);
     }
 
