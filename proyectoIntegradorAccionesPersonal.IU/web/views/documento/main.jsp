@@ -43,7 +43,7 @@ dateFormat: 'dd/mm/yy'
         </div>
         <div class="col-xs-9 contenidoTitulo" >
             <p id="titulo" class="text-small-caps">
-                NOMBRE DEL DOCUMENTO
+                  ACCI&Oacute;N DE PERSONAL
             </p>
         </div>
         <div id="contenidoEncabezadoDetalle" class="col-xs-2 p-0">
@@ -292,8 +292,8 @@ dateFormat: 'dd/mm/yy'
                             <div class="col-xs-3">
                                 <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
    
-                                <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="guardar">
-                                    Crear Accion | <i class="fa fa-fw"></i>
+                                <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Crear" value="guardar">
+                                    Crear | <i class="fa fa-fw"></i>
                                 </button>
                             </div>
                         </div>
@@ -305,7 +305,7 @@ dateFormat: 'dd/mm/yy'
                             <div class="col-xs-3">
                                 <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
    
-                                <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="mostrar">
+                                <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Mostrar" value="mostrar">
                                     Mostrar| <i class="fa fa-fw"></i>
                                 </button>
                             </div>
