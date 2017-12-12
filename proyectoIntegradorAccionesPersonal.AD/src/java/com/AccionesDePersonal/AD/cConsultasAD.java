@@ -39,30 +39,132 @@ public class cConsultasAD {
                 + "	cedula_trabajador, nombre_trabajador, apellido_trabajador, n_afi_iees_trabajador)\n"
                 + "	VALUES (' " + cedula + "', ' " + nombre + "',  ' " + apellido + "'," + iess + ")";
         return result;
-
     }
 
-    public String strSQLSelectResolucion() {
-        String result = "SELECT resolucion\n"
-                + "  FROM accionp;";
+    public String strSQLSelectResolucionAp(String numero_ap) {
+        String result = "SELECT resolucion_ap\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
         return result;
     }
 
-    public String strSQLSelectCedula() {
-        String result = "SELECT cedula\n"
-                + "  FROM accionp;";
+    public String strSQLSelectApellido(String cedula) {
+        String result = "SELECT apellido_trabajador\n"
+                + "FROM trabajador AS t\n"
+                + "INNER JOIN accion_personal AS ap ON (t.'" + cedula + "' = ap.'" + cedula + "')";
         return result;
     }
 
-    public String strSQLSelectApellido() {
-        String result = "SELECT apellido\n"
-                + "  FROM accionp;";
+    public String strSQLSelectNombre(String cedula) {
+        String result = "SELECT nombre_trabajador\n"
+                + "FROM trabajador AS t\n"
+                + "INNER JOIN accion_personal AS ap ON (t.'" + cedula + "' = ap.'" + cedula + "')";
         return result;
     }
 
-    public String strSQLSelectNombre() {
-        String result = "SELECT nombre\n"
-                + "  FROM accionp;";
+    public String strSQLSelectFechaCreada(String numero_ap) {
+        String result = "SELECT fecha_creada_ap\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectFechaRige(String numero_ap) {
+        String result = "SELECT fecha_rige_ap\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectExplicacionAp(String numero_ap) {
+        String result = "SELECT descripcion_rol\n"
+                + "FROM tipo AS ti\n"
+                + "INNER JOIN accion_personal AS ap ON (ti.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectNumeroTipo(String numero_ap) {
+        String result = "SELECT numero_tipo\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectObservacionesAp(String numero_ap) {
+        String result = "SELECT observaciones_ap\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectRectorAp(String numero_ap) {
+        String result = "SELECT rector_ap\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+
+    }
+
+    public String strSQLSelectDirectorThAp(String numero_ap) {
+        String result = "SELECT director_th_ap\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectIessTrabajador(String cedula) {
+        String result = "SELECT n_afi_iees_trabajador\n"
+                + "FROM trabajador AS t\n"
+                + "INNER JOIN accion_personal AS ap ON (t.'" + cedula + "' = ap.'" + cedula + "')";
+        return result;
+    }
+
+    public String strSQLSelectDependeciaSituacion(String numero_ap) {
+        String result = "SELECT dependencia_situacion\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectPuestoSituacion(String numero_ap) {
+        String result = "SELECT puesto_situacion\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectLugarSituacion(String numero_ap) {
+        String result = "SELECT lugar_situacion\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectEstadoSituacion(String numero_ap) {
+        String result = "SELECT estado_situacion\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectPartIndSituacion(String numero_ap) {
+        String result = "SELECT part_ind_situacion\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectPresuSituacion(String numero_ap) {
+        String result = "SELECT part_presu_situacion\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
+        return result;
+    }
+
+    public String strSQLSelectRemuMenSituacion(String numero_ap) {
+        String result = "SELECT remuneracion_men_situacion\n"
+                + "FROM situacion AS s\n"
+                + "INNER JOIN accion_personal AS ap ON (s.'" + numero_ap + "' = ap.'" + numero_ap + "')";
         return result;
     }
 

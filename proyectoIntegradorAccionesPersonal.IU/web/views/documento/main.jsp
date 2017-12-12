@@ -9,26 +9,26 @@
     function cargaContenido() {
         $('#unidades').load("ingresarAccionesPersonal.jsp");
     }
- </script>
- 
+</script>
+
 
 <script>
-$(function () {
-$.datepicker.setDefaults($.datepicker.regional["es"]);
-$("#datepicker").datepicker({
-firstDay: 1,
-monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
-'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
-dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
-'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié;', 'Juv', 'Vie', 'Sáb'],
-dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
-weekHeader: 'Sm',
-dateFormat: 'dd/mm/yy'
-});
-});
+    $(function () {
+        $.datepicker.setDefaults($.datepicker.regional["es"]);
+        $("#datepicker").datepicker({
+            firstDay: 1,
+            monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+                'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+            dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+            monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
+                'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+            dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+            dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié;', 'Juv', 'Vie', 'Sáb'],
+            dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
+            weekHeader: 'Sm',
+            dateFormat: 'dd/mm/yy'
+        });
+    });
 </script>
 
 
@@ -220,11 +220,11 @@ dateFormat: 'dd/mm/yy'
                     <%String cedula = request.getParameter("cedula");
                         String apellido = request.getParameter("apellido");
                         String nombre = request.getParameter("nombre");
-                         String  explicacion= request.getParameter("explicacion");
-                      String  resolucion= request.getParameter("resolucion"); 
-                       String fecha = request.getParameter("fecha");
+                        String explicacion = request.getParameter("explicacion");
+                        String resolucion = request.getParameter("resolucion");
+                        String fecha = request.getParameter("fecha");
                     %>
-                  
+
                     <form action="Controllers/controllerIngresarAccionesPersonal.jsp" method="post" >
                         <div id="unidades" class="unidad">   
 
@@ -271,7 +271,7 @@ dateFormat: 'dd/mm/yy'
                                 <label for="example-text-input" class="col-xs-2 col-form-label">Explicacion:</label>
                                 <div class="col-xs-10">
                                     <textarea rows="4" cols="100" name="explicacion" >
-                                       <%=explicacion%>
+                                        <%=explicacion%>
                                     </textarea>
                                 </div>
 
@@ -280,8 +280,8 @@ dateFormat: 'dd/mm/yy'
                             <!--calendario-->
 
                             <input type="text" id="datepicker" name="fecha"  value="<%=fecha%>"/>
-                            
-                           
+
+
                             <!--calendario-->
 
 
@@ -291,20 +291,20 @@ dateFormat: 'dd/mm/yy'
                             </div>
                             <div class="col-xs-3">
                                 <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
-   
+
                                 <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="guardar">
                                     Crear Accion | <i class="fa fa-fw"></i>
                                 </button>
                             </div>
                         </div>
-                                    
-                                    
-                          <div class="form-group row">
+
+
+                        <div class="form-group row">
                             <div class="col-xs-9">
                             </div>
                             <div class="col-xs-3">
                                 <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
-   
+
                                 <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="mostrar">
                                     Mostrar| <i class="fa fa-fw"></i>
                                 </button>

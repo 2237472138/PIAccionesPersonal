@@ -86,11 +86,11 @@
             <div class="row _div_adp _div_bordes_inf">
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
                     <div><%=cedula%></div><br>
-                  
+
                 </div>
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4 _div_bordes_lat">
                     <div>No. De Afiliación IESS</div><br>
-                    <div>¿¿¿¿¿¿¿??????</div>
+                    <div>&nbsp;&nbsp;&nbsp;</div>
                 </div>
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
                     <div>Rige a partir de</div><br>
