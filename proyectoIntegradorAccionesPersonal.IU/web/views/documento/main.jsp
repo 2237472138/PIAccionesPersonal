@@ -167,56 +167,6 @@
             <div class="row">
                 <div id="contenidoDinamicoScrollbar" class="col-xs-12">
 
-                    <!-- Contenido -->
-
-                    <!-- Ejemplo de ártbol de contenidos -->
-
-                    <!--     <div class="form-group row">
-                             <label id="seccionEtiqueta" for="example-text-input" class="col-xs-2 form-control-label">Contenido:</label>
-                             <div id="seccionContenido" class="col-xs-10">
-
-                                 <div class="tema">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Tema: </span>
-                                         <input type="text" class="form-control" placeholder="Título del tema">
-                                         <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                                 <div class="subtema">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Subtema: </span>
-                                         <input type="text" class="form-control" placeholder="Título del subtema">
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                                 <div class="subtema">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Subtema: </span>
-                                         <input type="text" class="form-control" placeholder="Título del subtema">
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                                 <div class="unidad">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Unidad: </span>
-                                         <input type="text" class="form-control" placeholder="Título de la unidad">
-                                         <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                                 <div class="unidad">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Unidad: </span>
-                                         <input type="text" class="form-control" placeholder="Título de la unidad">
-                                         <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                    -->
-                    <!-- FIN de ejemplo de ártbol de contenidos -->
                     <%String cedula = request.getParameter("cedula");
                         String apellido = request.getParameter("apellido");
                         String nombre = request.getParameter("nombre");
