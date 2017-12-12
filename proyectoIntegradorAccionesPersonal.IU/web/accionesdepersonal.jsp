@@ -52,12 +52,12 @@
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="row _div_bordes_med">
                         <div class="_div_med"><img src="images/varias/logoESPOCH.jpg" class="_img_espoch"></div>
-                        <div><p class='_parrafo_espoch'>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO DIRECCION DE TALENTO HUMANO</p></div>                       
+                        <div><p class='_parrafo_espoch'>ESCUELA SUPERIOR POLITÉCNICA DE CHIMBORAZO DIRECCIÓN DE TALENTO HUMANO</p></div>                       
                     </div>
                 </div>
                 <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 _div_adp">
                     <div class="row _div_bordes">
-                        <div class="_adp">ACCION DE PERSONAL</div>
+                        <div class="_adp">ACCIÓN DE PERSONAL</div>
                         <div class="_numero">No. 394.A.DTH.2017</div><br><br>
                         <div class="_fecha">Fecha: 29 de Agosto de 2017</div>
                     </div>
@@ -85,12 +85,13 @@
 
             <div class="row _div_adp _div_bordes_inf">
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
+                     <div>No. De Cédula de Ciudadanía</div>
                     <div><%=cedula%></div><br>
                   
                 </div>
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4 _div_bordes_lat">
                     <div>No. De Afiliación IESS</div><br>
-                    <div>¿¿¿¿¿¿¿??????</div>
+                    <div>xxxxxxxaxxxx</div>
                 </div>
                 <div class="col-sm-4 col-md-4 col-md-4 col-lg-4">
                     <div>Rige a partir de</div><br>
@@ -98,16 +99,22 @@
                 </div>
             </div>
 
+ 
+                  
             <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf">
-                    <p><%=explicacion%></p><br><br>
+                <div class="col-sm-12 col-md-12 col-lg-12 _div_bordes_inf" style="position:fixed;left:19.1%;">
+                   <b>EXPLICACIÓN: </b>
+                   <%=explicacion%></p><br><br>                     
+                  <br>
                 </div>
             </div>
 
+               
+                
             <div class="row _div_izq_aba_der">
                 <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">1. INGRESO</div>
                 <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">1</div>
-                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">6. SUBRPGACIÓN</div>
+                <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">6. SUBROPGACIÓN</div>
                 <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 _div_bordes_lat_izq">6</div>
                 <div class="col-sm-3 col-md-3 col-md-3 col-lg-3 _div_bordes_lat_izq">11. RENUNCIA</div>
                 <div class="col-sm-1 col-md-1 col-md-1 col-lg-1 ">11</div>
