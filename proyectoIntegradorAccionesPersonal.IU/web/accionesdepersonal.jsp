@@ -44,6 +44,9 @@
         <div class="col-sm-12 col-md-12 col-md-12 col-lg-12">
 
             <div class="row">
+                <div> 
+                    <button class="btn btn-basic" type="submit" onclick="window.print()">Imprimir</button>
+                </div>
                 <div class="_div_bordes col-xs-4 col-sm-4 col-md-4 col-lg-4">
                     <div class="col-sm-4 col-md-4 col-lg-4">
                         <p><img src="images/varias/LogoMDT.png" class="_img_ministerio"></p>              
