@@ -277,6 +277,100 @@ dateFormat: 'dd/mm/yy'
 
                             </div>
 
+                                    
+                                    
+   
+          <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Dependencia:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Puesto:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                          
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Lugar de trabajo:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Remuneracion mensual:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>           
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Regimen:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>            
+                   
+ 
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Partida individual:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>                   
+
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Partida presupuestaria:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Observaciones:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+        </div>
+        
+                                         
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                             <!--calendario-->
 
                             <input type="text" id="datepicker" name="fecha"  value="<%=fecha%>"/>

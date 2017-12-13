@@ -11,10 +11,93 @@ response.sendRedirect("documento.jsp?cedula="+cedula+"&apellido="+apellido+"&nom
         <div class="col-xs-10">
             <input class="form-control" type="text" placeholder="Número de cédula" id="example-text-input"  name="cedula" value="<%=cedula%>">
         </div>
+        
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Dependencia:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Puesto:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                          
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Lugar de trabajo:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Remuneracion mensual:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>           
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Regimen:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>            
+                   
+ 
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Partida individual:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>                   
+
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Partida presupuestaria:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Observaciones:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+        </div>
+        
+        
+        
+        
     </div>
     <button type="submit" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" name="btn" value="verificar">
         verificar | <i class="fa fa-fw"></i>
     </button> 
+        
+                          
+
+        
+        
+        
+        
 </form>
 
 <div class="form-group row">
@@ -43,9 +126,76 @@ response.sendRedirect("documento.jsp?cedula="+cedula+"&apellido="+apellido+"&nom
                 <input class="form-control" type="text" placeholder="Nombres completos" id="example-text-input" name="nombre" disabled="true">
             </div>
         </div>
+                   
 
+                   
+                   
         <div class="form-group row">
             <label for="example-text-input" class="col-xs-2 col-form-label">Explicacion:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+        </div>
+                   
+                           <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Dependencia:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Puesto:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+        
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Lugar de trabajo:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Remuneracion mensual:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>           
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Regimen:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>            
+                   
+ 
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Partida individual:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>                   
+
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Partida presupuestaria:</label>
             <div class="col-xs-10">
                 <textarea rows="4" cols="100">
                 </textarea>
@@ -53,7 +203,14 @@ response.sendRedirect("documento.jsp?cedula="+cedula+"&apellido="+apellido+"&nom
 
         </div>
 
-
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Observaciones:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+        </div>
+                   
         <div class="form-group row">
             <div class="col-xs-9">
             </div>
