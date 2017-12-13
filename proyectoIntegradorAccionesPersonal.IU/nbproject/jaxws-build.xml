@@ -28,7 +28,7 @@
     </target>
     <target name="wsimport-client-wsAccionesPersonal" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/wsAccionesPersonal"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/wsAccionesPersonal" destdir="${build.generated.dir}/jax-wsCache/wsAccionesPersonal" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/wsAccionesPersonal/wsdl/localhost_8080/proyectoIntegradorAccionesPersonal.AD/wsAccionesPersonal.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/proyectoIntegradorAccionesPersonal.AD/wsAccionesPersonal?wsdl" xnocompile="true" xendorsed="true" package="com.AccionesDePersonal.WSC">
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/wsAccionesPersonal" destdir="${build.generated.dir}/jax-wsCache/wsAccionesPersonal" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/wsAccionesPersonal/wsdl/localhost_8080/proyectoIntegradorAccionesPersonal.AD/wsAccionesPersonal.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/proyectoIntegradorAccionesPersonal.AD/wsAccionesPersonal?WSDL" xnocompile="true" xendorsed="true">
             <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/wsAccionesPersonal/wsdl/localhost_8080/proyectoIntegradorAccionesPersonal.AD/wsAccionesPersonal.wsdl"/>
             <produces dir="${build.generated.dir}/jax-wsCache/wsAccionesPersonal"/>
         </wsimport>
@@ -39,7 +39,7 @@
         </copy>
     </target>
     <target name="wsimport-client-clean-wsAccionesPersonal" depends="-init-project">
-        <delete dir="${build.generated.sources.dir}/jax-ws/com/AccionesDePersonal/WSC"/>
+        <delete dir="${build.generated.sources.dir}/jax-ws/com/accionesdepersonal/ws"/>
         <delete dir="${build.generated.dir}/jax-wsCache/wsAccionesPersonal"/>
     </target>
     <target name="wsimport-client-generate" depends="wsimport-client-wsAccionesPersonal"/>
