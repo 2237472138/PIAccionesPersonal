@@ -9,26 +9,26 @@
     function cargaContenido() {
         $('#unidades').load("ingresarAccionesPersonal.jsp");
     }
- </script>
- 
+</script>
+
 
 <script>
-$(function () {
-$.datepicker.setDefaults($.datepicker.regional["es"]);
-$("#datepicker").datepicker({
-firstDay: 1,
-monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
-'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
-dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
-'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
-dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
-dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié;', 'Juv', 'Vie', 'Sáb'],
-dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
-weekHeader: 'Sm',
-dateFormat: 'dd/mm/yy'
-});
-});
+    $(function () {
+        $.datepicker.setDefaults($.datepicker.regional["es"]);
+        $("#datepicker").datepicker({
+            firstDay: 1,
+            monthNames: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+                'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+            dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+            monthNamesShort: ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun',
+                'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'],
+            dayNames: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
+            dayNamesShort: ['Dom', 'Lun', 'Mar', 'Mié;', 'Juv', 'Vie', 'Sáb'],
+            dayNamesMin: ['Do', 'Lu', 'Ma', 'Mi', 'Ju', 'Vi', 'Sá'],
+            weekHeader: 'Sm',
+            dateFormat: 'dd/mm/yy'
+        });
+    });
 </script>
 
 
@@ -43,7 +43,7 @@ dateFormat: 'dd/mm/yy'
         </div>
         <div class="col-xs-9 contenidoTitulo" >
             <p id="titulo" class="text-small-caps">
-                NOMBRE DEL DOCUMENTO
+                  ACCI&Oacute;N DE PERSONAL
             </p>
         </div>
         <div id="contenidoEncabezadoDetalle" class="col-xs-2 p-0">
@@ -167,64 +167,14 @@ dateFormat: 'dd/mm/yy'
             <div class="row">
                 <div id="contenidoDinamicoScrollbar" class="col-xs-12">
 
-                    <!-- Contenido -->
-
-                    <!-- Ejemplo de ártbol de contenidos -->
-
-                    <!--     <div class="form-group row">
-                             <label id="seccionEtiqueta" for="example-text-input" class="col-xs-2 form-control-label">Contenido:</label>
-                             <div id="seccionContenido" class="col-xs-10">
-
-                                 <div class="tema">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Tema: </span>
-                                         <input type="text" class="form-control" placeholder="Título del tema">
-                                         <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                                 <div class="subtema">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Subtema: </span>
-                                         <input type="text" class="form-control" placeholder="Título del subtema">
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                                 <div class="subtema">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Subtema: </span>
-                                         <input type="text" class="form-control" placeholder="Título del subtema">
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                                 <div class="unidad">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Unidad: </span>
-                                         <input type="text" class="form-control" placeholder="Título de la unidad">
-                                         <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                                 <div class="unidad">
-                                     <div class="input-group">
-                                         <span class="input-group-addon">Unidad: </span>
-                                         <input type="text" class="form-control" placeholder="Título de la unidad">
-                                         <span class="input-group-addon"><i class="fa fa-plus-circle"></i></span>
-                                         <span class="input-group-addon"><i class="fa fa-minus-circle"></i></span>
-                                     </div>
-                                 </div>
-                             </div>
-                         </div>
-                    -->
-                    <!-- FIN de ejemplo de ártbol de contenidos -->
                     <%String cedula = request.getParameter("cedula");
                         String apellido = request.getParameter("apellido");
                         String nombre = request.getParameter("nombre");
-                         String  explicacion= request.getParameter("explicacion");
-                      String  resolucion= request.getParameter("resolucion"); 
-                       String fecha = request.getParameter("fecha");
+                        String explicacion = request.getParameter("explicacion");
+                        String resolucion = request.getParameter("resolucion");
+                        String fecha = request.getParameter("fecha");
                     %>
-                  
+
                     <form action="Controllers/controllerIngresarAccionesPersonal.jsp" method="post" >
                         <div id="unidades" class="unidad">   
 
@@ -271,17 +221,111 @@ dateFormat: 'dd/mm/yy'
                                 <label for="example-text-input" class="col-xs-2 col-form-label">Explicacion:</label>
                                 <div class="col-xs-10">
                                     <textarea rows="4" cols="100" name="explicacion" >
-                                       <%=explicacion%>
+                                        <%=explicacion%>
                                     </textarea>
                                 </div>
 
                             </div>
 
+                                    
+                                    
+   
+          <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Dependencia:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Puesto:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                          
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Lugar de trabajo:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Remuneracion mensual:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>           
+                   
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Regimen:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>            
+                   
+ 
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Partida individual:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>                   
+
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Partida presupuestaria:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+
+        </div>
+
+        <div class="form-group row">
+            <label for="example-text-input" class="col-xs-2 col-form-label">Observaciones:</label>
+            <div class="col-xs-10">
+                <textarea rows="4" cols="100">
+                </textarea>
+            </div>
+        </div>
+        
+                                         
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    
                             <!--calendario-->
 
                             <input type="text" id="datepicker" name="fecha"  value="<%=fecha%>"/>
-                            
-                           
+
+
                             <!--calendario-->
 
 
@@ -291,21 +335,32 @@ dateFormat: 'dd/mm/yy'
                             </div>
                             <div class="col-xs-3">
                                 <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
+<<<<<<< HEAD
    
+                                <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Crear" value="guardar">
+                                    Crear | <i class="fa fa-fw"></i>
+=======
+
                                 <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="guardar">
                                     Crear Accion | <i class="fa fa-fw"></i>
+>>>>>>> b38d34bd2cfe2dd9ad71889e18073aa8bd0ce47c
                                 </button>
                             </div>
                         </div>
-                                    
-                                    
-                          <div class="form-group row">
+
+
+                        <div class="form-group row">
                             <div class="col-xs-9">
                             </div>
                             <div class="col-xs-3">
                                 <!-- posibles valores: fa-check, fa-times o fa-exclamation -->
+<<<<<<< HEAD
    
+                                <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Mostrar" value="mostrar">
+=======
+
                                 <button type="submit" id="btn" name="btn" class="btn btn-secondary float-xs-right" data-toggle="tooltip" data-placement="top" title="Guardar cambios" value="mostrar">
+>>>>>>> b38d34bd2cfe2dd9ad71889e18073aa8bd0ce47c
                                     Mostrar| <i class="fa fa-fw"></i>
                                 </button>
                             </div>
