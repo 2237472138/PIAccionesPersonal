@@ -19,6 +19,17 @@ public class wsAccionesPersonal {
 
     cOperacionesLN oOperacionesLN = new cOperacionesLN();
 
+    /////////////////////servicio web para consultar por accion de personal//////////////////////////////
+    @WebMethod(operationName = "cargarDatos")
+    public String cargarDatos(String palabra) {
+        String resp = "";
+        try {
+            resp = oOperacionesLN.cargarDatos(palabra);
+        } catch (Exception e) {
+        }
+        return resp;
+    }
+
     @WebMethod(operationName = "getResolucionAp")
     public String getResolucion(@WebParam(name = "cedula") String cedula) {
         return oOperacionesLN.getResolucionAp(cedula);
