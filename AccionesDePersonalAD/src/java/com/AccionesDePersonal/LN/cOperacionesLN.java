@@ -526,24 +526,25 @@ public class cOperacionesLN {
 
     public String cargarDatos(String palabra) throws SQLException {
         cAccesoDatos ad = new cAccesoDatos();
-        ad.Connectar();
-        List<String> palabras = new ArrayList<>();
-        String result = "";
-        String strSQL = "SELECT * FROM dato WHERE palabra LIKE ('" + palabra + "%')";
-        String p = "";
 
-        if (ad.EjecutarSQL(strSQL) != 0) {
-            ResultSet reg = ad.getRs();
-            if (reg != null) {
-                while (reg.next()) {
-                    p = reg.getString("palabra");
-                    palabras.add(p);
-                    p = new String();
+        List<String> palabras = new ArrayList<>();
+        if (ad.Connectar() == 2) {
+            String result = "";
+            String strSQL = "SELECT * FROM dato WHERE palabra LIKE ('" + palabra + "%')";
+            String p = "";
+
+            if (ad.EjecutarSQL(strSQL) != 0) {
+                ResultSet reg = ad.getRs();
+                if (reg != null) {
+                    while (reg.next()) {
+                        p = reg.getString("palabra");
+                        palabras.add(p);
+                        p = new String();
+                    }
                 }
             }
+            ad.Desconectar();
         }
-        ad.Desconectar();
-        
         Gson gson = new Gson();
         return gson.toJson(palabras);
     }

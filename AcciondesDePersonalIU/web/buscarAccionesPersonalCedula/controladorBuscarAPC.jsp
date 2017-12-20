@@ -1,17 +1,17 @@
-<%-- 
-    Document   : controladorBuscarAPC
-    Created on : 19-dic-2017, 17:31:23
-    Author     : sttef
---%>
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+
+<%
+    try {
+        String strTSK = request.getParameter("tsk");
+        if (strTSK.equals("buscar")) {
+            String palabra = request.getParameter("palabra");
+            response.sendRedirect("modeloBuscarAPC.jsp?tsk=" + strTSK + "&palabra=" + palabra);
+        } else if (strTSK.equals("mostrar")) {
+            response.sendRedirect("vistaBuscarAPC.jsp?tsk=" + strTSK);
+        } else if (strTSK.equals("mostrarPersonas")) {
+            response.sendRedirect("vistaBuscarAPC.jsp?tsk=" + strTSK);
+        }
+    } catch (Exception e) {
+        //out.print("Error de Generacion Controlador");
+    }
+%>
