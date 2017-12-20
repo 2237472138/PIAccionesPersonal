@@ -12,9 +12,9 @@ package com.ConexionBaseDatos;
 public class cConexion {
 
     public static String driverclass = "org.postgresql.Driver";
-<<<<<<< HEAD
+
     public static String databaseURL = "jdbc:postgresql://192.168.232.129:5432/db_acciones_personal";
-=======
+
 
 //    Stteffano
 //    public static String databaseURL = "jdbc:postgresql://192.168.232.129:5432/db_acciones_personal";
@@ -28,7 +28,7 @@ public class cConexion {
 
 //    Danny Servidor 
     public static String databaseURL = "jdbc:postgresql://192.168.225.134:5432/db_acciones_personal";
->>>>>>> 7d6d65c7d2eb7c8cda3dbfb802ad3fac9c0d2347
+
     public static String usuarioDB = "postgres";
     public static String claveDB = "12345";
     
