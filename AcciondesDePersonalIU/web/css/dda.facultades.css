@@ -1,0 +1,42 @@
+.ciencias,
+.ciencias_pecuarias,
+.FADE,
+.fie,
+.mecanica,
+.recursos_naturales,
+.salud_publica {
+    width: 84px;
+    height: 84px;
+
+    background-repeat : no-repeat;
+    background-size: 84px;
+}
+
+.ciencias {
+    /*background-image : url(../images/facultades/ciencias.png);*/
+    background-image : url(../images/facultades/ciencias.jpg);
+}
+
+.ciencias_pecuarias {
+    background-image : url(../images/facultades/ciencias_pecuarias.png);
+}
+
+.FADE {
+    background-image : url(../images/facultades/fade.png);
+}
+
+.fie {
+    background-image : url(../images/facultades/fie.png);
+}
+
+.mecanica {
+    background-image : url(../images/facultades/mecanica.png);
+}
+
+.recursos_naturales {
+    background-image : url(../images/facultades/recursos_naturales.png);
+}
+
+.salud_publica {
+    background-image : url(../images/facultades/salud_publica.png);
+}

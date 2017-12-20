@@ -1,0 +1,342 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.2-b608 (trunk-7979; 2015-01-21T12:50:19+0000) JAXWS-RI/2.2.11-b150120.1832 JAXWS-API/2.2.12 JAXB-RI/2.2.12-b141219.1637 JAXB-API/2.2.13-b141020.1521 svn-revision#unknown. --><xs:schema xmlns:tns="http://WS.AccionesDePersonal.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://WS.AccionesDePersonal.com/">
+
+<xs:element name="GuardarDatosAP" type="tns:GuardarDatosAP"/>
+
+<xs:element name="GuardarDatosAPResponse" type="tns:GuardarDatosAPResponse"/>
+
+<xs:element name="cargarDatos" type="tns:cargarDatos"/>
+
+<xs:element name="cargarDatosResponse" type="tns:cargarDatosResponse"/>
+
+<xs:element name="getApellido" type="tns:getApellido"/>
+
+<xs:element name="getApellidoResponse" type="tns:getApellidoResponse"/>
+
+<xs:element name="getDependenciaSituacion" type="tns:getDependenciaSituacion"/>
+
+<xs:element name="getDependenciaSituacionResponse" type="tns:getDependenciaSituacionResponse"/>
+
+<xs:element name="getDirectorThAp" type="tns:getDirectorThAp"/>
+
+<xs:element name="getDirectorThApResponse" type="tns:getDirectorThApResponse"/>
+
+<xs:element name="getEstadoSituacion" type="tns:getEstadoSituacion"/>
+
+<xs:element name="getEstadoSituacionResponse" type="tns:getEstadoSituacionResponse"/>
+
+<xs:element name="getExplicacionAp" type="tns:getExplicacionAp"/>
+
+<xs:element name="getExplicacionApResponse" type="tns:getExplicacionApResponse"/>
+
+<xs:element name="getFechaCreada" type="tns:getFechaCreada"/>
+
+<xs:element name="getFechaCreadaResponse" type="tns:getFechaCreadaResponse"/>
+
+<xs:element name="getFechaRige" type="tns:getFechaRige"/>
+
+<xs:element name="getFechaRigeResponse" type="tns:getFechaRigeResponse"/>
+
+<xs:element name="getLugarSituacion" type="tns:getLugarSituacion"/>
+
+<xs:element name="getLugarSituacionResponse" type="tns:getLugarSituacionResponse"/>
+
+<xs:element name="getNombre" type="tns:getNombre"/>
+
+<xs:element name="getNombreResponse" type="tns:getNombreResponse"/>
+
+<xs:element name="getNumeroIessTrabajador" type="tns:getNumeroIessTrabajador"/>
+
+<xs:element name="getNumeroIessTrabajadorResponse" type="tns:getNumeroIessTrabajadorResponse"/>
+
+<xs:element name="getNumeroTipo" type="tns:getNumeroTipo"/>
+
+<xs:element name="getNumeroTipoResponse" type="tns:getNumeroTipoResponse"/>
+
+<xs:element name="getObservacionesAp" type="tns:getObservacionesAp"/>
+
+<xs:element name="getObservacionesApResponse" type="tns:getObservacionesApResponse"/>
+
+<xs:element name="getPartIndSituacion" type="tns:getPartIndSituacion"/>
+
+<xs:element name="getPartIndSituacionResponse" type="tns:getPartIndSituacionResponse"/>
+
+<xs:element name="getPartPresuSituacion" type="tns:getPartPresuSituacion"/>
+
+<xs:element name="getPartPresuSituacionResponse" type="tns:getPartPresuSituacionResponse"/>
+
+<xs:element name="getPuestoSituacion" type="tns:getPuestoSituacion"/>
+
+<xs:element name="getPuestoSituacionResponse" type="tns:getPuestoSituacionResponse"/>
+
+<xs:element name="getRectorAp" type="tns:getRectorAp"/>
+
+<xs:element name="getRectorApResponse" type="tns:getRectorApResponse"/>
+
+<xs:element name="getRemuMenSituacion" type="tns:getRemuMenSituacion"/>
+
+<xs:element name="getRemuMenSituacionResponse" type="tns:getRemuMenSituacionResponse"/>
+
+<xs:element name="getResolucionAp" type="tns:getResolucionAp"/>
+
+<xs:element name="getResolucionApResponse" type="tns:getResolucionApResponse"/>
+
+<xs:element name="setExplicacionTipo" type="tns:setExplicacionTipo"/>
+
+<xs:element name="setExplicacionTipoResponse" type="tns:setExplicacionTipoResponse"/>
+
+<xs:complexType name="getPuestoSituacion">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPuestoSituacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFechaCreada">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFechaCreadaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEstadoSituacion">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getEstadoSituacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getResolucionAp">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getResolucionApResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPartIndSituacion">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPartIndSituacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getObservacionesAp">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getObservacionesApResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarDatosAP">
+<xs:sequence>
+<xs:element name="resolucion" type="xs:string" minOccurs="0"/>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+<xs:element name="nombre" type="xs:string" minOccurs="0"/>
+<xs:element name="apellido" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="GuardarDatosAPResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setExplicacionTipo">
+<xs:sequence>
+<xs:element name="explicacion" type="xs:string" minOccurs="0"/>
+<xs:element name="tipo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setExplicacionTipoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNombre">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNombreResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNumeroIessTrabajador">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNumeroIessTrabajadorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFechaRige">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getFechaRigeResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRemuMenSituacion">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRemuMenSituacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getExplicacionAp">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getExplicacionApResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cargarDatos">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cargarDatosResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLugarSituacion">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getLugarSituacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDependenciaSituacion">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDependenciaSituacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorThAp">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getDirectorThApResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRectorAp">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getRectorApResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getApellido">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getApellidoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPartPresuSituacion">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getPartPresuSituacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNumeroTipo">
+<xs:sequence>
+<xs:element name="cedula" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getNumeroTipoResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
