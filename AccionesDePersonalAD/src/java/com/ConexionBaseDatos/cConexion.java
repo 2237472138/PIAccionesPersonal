@@ -26,6 +26,6 @@ public class cConexion {
 //    Danny Servidor 
     public static String databaseURL = "jdbc:postgresql://192.168.225.134:5432/db_acciones_personal";
     public static String usuarioDB = "postgres";
-    public static String claveDB = "12345";
+    public static String claveDB = "123456";
     
 }
